@@ -1,0 +1,1009 @@
+Optimising source file: examples/locoGP/SortBubbleDouble.java
+
+Initial execution time: 2279862.25 (ns) 
+
+Step 1 | COPY 11 -> 1:0 |Time: 1.6016755E7
+Step 2 | MOVE 6 -> 5:0 |Patch invalid
+Step 3 | COPY 10 -> 3:1 |Failed to compile
+Step 4 | COPY 11 -> 5:0 |Failed to compile
+Step 5 | MOVE 0 -> 5:0 |Failed to compile
+Step 6 | DEL 17 |Time: 3093655.0
+Step 7 | DEL 5 |Time: 2510706.0
+Step 8 | MOVE 10 -> 3:0 |Failed to compile
+Step 9 | DEL 11 |Patch invalid
+Step 10 | COPY 13 -> 2:0 |Time: 1.2961401E7
+Step 11 | MOVE 5 -> 4:0 |Failed to compile
+Step 12 | COPY 9 -> 5:0 |Failed to compile
+Step 13 | COPY 9 -> 5:0 |Failed to compile
+Step 14 | DEL 2 |Patch invalid
+Step 15 | DEL 12 |Time: 2943790.0
+Step 16 | DEL 13 |Patch invalid
+Step 17 | MOVE 1 -> 5:0 |Failed to compile
+Step 18 | COPY 2 -> 0:2 |Time: 2789349.0
+Step 19 | DEL 13 |Patch invalid
+Step 20 | COPY 9 -> 0:2 |Failed to compile
+Step 21 | COPY 3 -> 3:0 |Failed to compile
+Step 22 | COPY 10 -> 4:0 |Failed to compile
+Step 23 | MOVE 1 -> 5:0 |Failed to compile
+Step 24 | COPY 4 -> 2:0 |Time: 2797298.0
+Step 25 | MOVE 5 -> 1:0 |Failed to compile
+Step 26 | MOVE 3 -> 2:0 |Time: 2304976.0
+Step 27 | COPY 2 -> 1:0 |Time: 1.2237878E7
+Step 28 | COPY 18 -> 5:0 |Failed to compile
+Step 29 | DEL 17 |Time: 2537114.0
+Step 30 | DEL 16 |Failed to compile
+Step 31 | MOVE 1 -> 4:0 |Failed to compile
+Step 32 | MOVE 6 -> 0:1 |Patch invalid
+Step 33 | COPY 2 -> 2:0 |Failed to compile
+Step 34 | COPY 6 -> 0:2 |Failed to compile
+Step 35 | COPY 13 -> 4:0 |Failed to compile
+Step 36 | MOVE 9 -> 3:1 |Failed to pass all tests
+Step 37 | MOVE 9 -> 0:2 |Failed to compile
+Step 38 | COPY 19 -> 0:0 |Failed to compile
+Step 39 | DEL 2 |Patch invalid
+Step 40 | DEL 11 |Patch invalid
+Step 41 | MOVE 0 -> 2:0 |Failed to compile
+Step 42 | MOVE 3 -> 2:0 |Time: 2912587.0
+Step 43 | COPY 10 -> 0:1 |Time: 2740924.0
+Step 44 | MOVE 11 -> 4:0 |Patch invalid
+Step 45 | COPY 3 -> 5:0 |Failed to compile
+Step 46 | MOVE 18 -> 5:0 |Failed to compile
+Step 47 | MOVE 5 -> 6:2 |Failed to compile
+Step 48 | DEL 2 |Patch invalid
+Step 49 | DEL 10 |*** New best *** Time: 2018842.0(ns)
+Step 50 | DEL 10 | MOVE 18 -> 2:0 |Failed to compile
+Step 51 |Time: 2283008.0
+Step 52 |Time: 3503165.0
+Step 53 |Time: 3051005.0
+Step 54 | DEL 10 | DEL 5 |Failed to pass all tests
+Step 55 |Time: 2593524.0
+Step 56 |Time: 5.5889553E7
+Step 57 |Time: 4607254.0
+Step 58 | DEL 10 | MOVE 5 -> 6:0 |Failed to pass all tests
+Step 59 | DEL 10 | DEL 10 |Patch invalid
+Step 60 | DEL 10 | DEL 19 |Failed to compile
+Step 61 |Time: 2386546.0
+Step 62 |Time: 9237225.0
+Step 63 |Time: 2762201.0
+Step 64 | DEL 10 | COPY 0 -> 2:0 |Failed to compile
+Step 65 | DEL 10 | DEL 18 |Time: 2860134.0
+Step 66 |Time: 8787710.0
+Step 67 | DEL 10 | MOVE 8 -> 0:0 |Failed to compile
+Step 68 |Time: 1.0034385E7
+Step 69 | DEL 10 | MOVE 0 -> 4:0 |Failed to compile
+Step 70 | DEL 10 | COPY 5 -> 4:0 |Time: 6088594.0
+Step 71 |Time: 2362892.0
+Step 72 |Time: 2038624.0
+Step 73 | DEL 10 | DEL 0 |Failed to compile
+Step 74 | DEL 10 | DEL 0 |Failed to compile
+Step 75 | DEL 10 | DEL 12 |*** New best *** Time: 1907926.0(ns)
+Step 76 | DEL 12 |Time: 7240761.0
+Step 77 | DEL 10 | DEL 12 | MOVE 7 -> 5:0 |Failed to compile
+Step 78 | DEL 12 |Time: 5810613.0
+Step 79 | DEL 10 | DEL 12 | MOVE 8 -> 2:0 |Failed to pass all tests
+Step 80 | DEL 10 | DEL 12 | COPY 16 -> 0:1 |Failed to compile
+Step 81 | DEL 10 | DEL 12 | MOVE 3 -> 5:0 |Failed to pass all tests
+Step 82 | DEL 12 |Time: 6579952.0
+Step 83 | DEL 10 |Time: 1.3567066E7
+Step 84 | DEL 12 |Time: 3777943.0
+Step 85 | DEL 10 | DEL 12 | DEL 4 |Patch invalid
+Step 86 | DEL 10 |*** New best *** Time: 1885732.0(ns)
+Step 87 | DEL 10 | COPY 13 -> 6:1 |Time: 1918825.0
+Step 88 | DEL 10 | MOVE 15 -> 4:0 |Patch invalid
+Step 89 |Time: 3044409.0
+Step 90 |Time: 1900829.0
+Step 91 | DEL 10 | DEL 19 |Failed to compile
+Step 92 | DEL 10 | COPY 14 -> 2:0 |Time: 1933017.0
+Step 93 | DEL 10 | MOVE 6 -> 2:0 |Patch invalid
+Step 94 |Time: 6611176.0
+Step 95 | DEL 10 | MOVE 14 -> 0:2 |Failed to compile
+Step 96 |Time: 2503047.0
+Step 97 |Time: 1901472.0
+Step 98 |Time: 2302951.0
+Step 99 |Time: 2166334.0
+Step 100 |Time: 1975171.0
+Step 101 | DEL 10 | MOVE 7 -> 1:0 |Failed to compile
+Step 102 |*** New best *** Time: 1867574.0(ns)
+Step 103 | DEL 16 |Failed to compile
+Step 104 | DEL 18 |Time: 6540967.0
+Step 105 | DEL 14 |Time: 4192680.0
+Step 106 | COPY 10 -> 1:0 |Failed to compile
+Step 107 | COPY 17 -> 2:0 |Failed to pass all tests
+Step 108 | DEL 3 |*** New best *** Time: 1805803.0(ns)
+Step 109 |*** New best *** Time: 1734073.0(ns)
+Step 110 | COPY 15 -> 1:0 |Failed to compile
+Step 111 | MOVE 18 -> 3:0 |Failed to compile
+Step 112 | MOVE 3 -> 6:2 |Failed to compile
+Step 113 | DEL 8 |Failed to pass all tests
+Step 114 | COPY 14 -> 5:0 |Time: 2027467.0
+Step 115 | COPY 14 -> 5:0 |Time: 2222267.0
+Step 116 | MOVE 3 -> 4:0 |Time: 3442746.0
+Step 117 | DEL 16 |Failed to compile
+Step 118 | MOVE 3 -> 0:2 |*** New best *** Time: 1534441.0(ns)
+Step 119 | MOVE 3 -> 0:2 | DEL 19 |Failed to compile
+Step 120 |Time: 1882926.0
+Step 121 |Time: 4225839.0
+Step 122 |Time: 2160506.0
+Step 123 | MOVE 3 -> 0:2 | MOVE 10 -> 3:1 |Failed to pass all tests
+Step 124 |Time: 1815968.0
+Step 125 | MOVE 3 -> 0:2 | MOVE 7 -> 5:0 |Failed to compile
+Step 126 | MOVE 3 -> 0:2 | MOVE 10 -> 6:0 |Failed to pass all tests
+Step 127 |Time: 1794059.0
+Step 128 | MOVE 3 -> 0:2 | COPY 8 -> 5:0 |Failed to pass all tests
+Step 129 | MOVE 3 -> 0:2 | MOVE 11 -> 0:2 |Patch invalid
+Step 130 |Time: 1804506.0
+Step 131 |Time: 1713582.0
+Step 132 | MOVE 3 -> 0:2 | COPY 12 -> 5:0 |Failed to compile
+Step 133 |Time: 1771078.0
+Step 134 | MOVE 3 -> 0:2 | COPY 15 -> 2:0 |Time: 1633756.0
+Step 135 |Time: 1781138.0
+Step 136 | MOVE 3 -> 0:2 | COPY 2 -> 4:0 |Time: 1898314.0
+Step 137 |Time: 2470793.0
+Step 138 | MOVE 3 -> 0:2 | DEL 10 |Failed to pass all tests
+Step 139 |Time: 1715756.0
+Step 140 |Time: 1861593.0
+Step 141 | MOVE 3 -> 0:2 | DEL 5 |Time: 1641450.0
+Step 142 |Time: 3032457.0
+Step 143 | MOVE 3 -> 0:2 | MOVE 6 -> 5:0 |Patch invalid
+Step 144 |Time: 1914480.0
+Step 145 | MOVE 3 -> 0:2 | DEL 2 |Patch invalid
+Step 146 |Time: 3059579.0
+Step 147 | MOVE 3 -> 0:2 | COPY 8 -> 3:2 |*** New best *** Time: 1504814.0(ns)
+Step 148 | COPY 8 -> 3:2 |Time: 2871662.0
+Step 149 | COPY 8 -> 3:2 |Time: 2685533.0
+Step 150 | MOVE 3 -> 0:2 | COPY 8 -> 3:2 | DEL 3 |Patch invalid
+Step 151 | MOVE 3 -> 0:2 |Time: 1641675.0
+Step 152 | COPY 8 -> 3:2 |Time: 3237093.0
+Step 153 | MOVE 3 -> 0:2 | COPY 8 -> 3:2 | MOVE 9 -> 1:0 |Failed to compile
+Step 154 | MOVE 3 -> 0:2 | COPY 8 -> 3:2 | DEL 5 |Time: 2285029.0
+Step 155 | MOVE 3 -> 0:2 | COPY 8 -> 3:2 | DEL 4 |Patch invalid
+Step 156 | MOVE 3 -> 0:2 |Time: 1530109.0
+Step 157 | MOVE 3 -> 0:2 | COPY 8 -> 3:2 | MOVE 16 -> 2:0 |Failed to compile
+Step 158 | COPY 8 -> 3:2 |Time: 2017284.0
+Step 159 | MOVE 3 -> 0:2 | COPY 8 -> 3:2 | MOVE 12 -> 0:1 |Failed to pass all tests
+Step 160 | MOVE 3 -> 0:2 |Time: 1826265.0
+Step 161 | MOVE 3 -> 0:2 | COPY 8 -> 3:2 | COPY 12 -> 4:0 |Time: 1777059.0
+Step 162 | MOVE 3 -> 0:2 | COPY 8 -> 3:2 | COPY 1 -> 2:0 |Time: 3025847.0
+Step 163 | COPY 8 -> 3:2 |Time: 1656609.0
+Step 164 | MOVE 3 -> 0:2 |Time: 1519262.0
+Step 165 | COPY 8 -> 3:2 |Time: 2094522.0
+Step 166 | COPY 8 -> 3:2 |Time: 1813021.0
+Step 167 | MOVE 3 -> 0:2 |Time: 1773745.0
+Step 168 | MOVE 3 -> 0:2 |Time: 1652960.0
+Step 169 | MOVE 3 -> 0:2 |*** New best *** Time: 1493834.0(ns)
+Step 170 |Time: 1921827.0
+Step 171 |Time: 2129044.0
+Step 172 | MOVE 3 -> 0:2 | COPY 16 -> 4:0 |Failed to compile
+Step 173 |Time: 1957733.0
+Step 174 |Time: 2046214.0
+Step 175 | MOVE 3 -> 0:2 | DEL 3 |Patch invalid
+Step 176 |Time: 1634913.0
+Step 177 |Time: 1773855.0
+Step 178 | MOVE 3 -> 0:2 | MOVE 4 -> 3:2 |Patch invalid
+Step 179 |Time: 1705575.0
+Step 180 |Time: 1654574.0
+Step 181 |Time: 2259390.0
+Step 182 |Time: 1710976.0
+Step 183 |Time: 1715952.0
+Step 184 | MOVE 3 -> 0:2 | MOVE 0 -> 2:0 |Failed to compile
+Step 185 | MOVE 3 -> 0:2 | DEL 18 |Failed to pass all tests
+Step 186 |Time: 1588626.0
+Step 187 | MOVE 3 -> 0:2 | MOVE 0 -> 4:0 |Failed to compile
+Step 188 |Time: 1652774.0
+Step 189 |Time: 2712636.0
+Step 190 |Time: 1810731.0
+Step 191 | MOVE 3 -> 0:2 | COPY 3 -> 4:0 |Time: 1757719.0
+Step 192 | MOVE 3 -> 0:2 | COPY 4 -> 0:2 |Failed to compile
+Step 193 | MOVE 3 -> 0:2 | MOVE 9 -> 0:0 |Failed to compile
+Step 194 |Time: 1663209.0
+Step 195 |Time: 1659175.0
+Step 196 |Time: 1.7834636E7
+Step 197 |Time: 1701057.0
+Step 198 | MOVE 3 -> 0:2 | DEL 19 |Failed to compile
+Step 199 | MOVE 3 -> 0:2 | DEL 13 |Patch invalid
+Step 200 |Time: 1750350.0
+Step 201 | MOVE 3 -> 0:2 | DEL 12 |Failed to pass all tests
+Step 202 | MOVE 3 -> 0:2 | MOVE 2 -> 5:0 |Patch invalid
+Step 203 |Time: 1700462.0
+Step 204 |Time: 1808190.0
+Step 205 | MOVE 3 -> 0:2 | DEL 1 |*** New best *** Time: 1390058.0(ns)
+Step 206 | MOVE 3 -> 0:2 |Time: 1405301.0
+Step 207 | DEL 1 |Time: 1408404.0
+Step 208 | MOVE 3 -> 0:2 | DEL 1 | DEL 5 |Time: 1559960.0
+Step 209 | MOVE 3 -> 0:2 | DEL 1 | COPY 4 -> 3:2 |Time: 1534378.0
+Step 210 | MOVE 3 -> 0:2 | DEL 1 | MOVE 18 -> 2:0 |Failed to pass all tests
+Step 211 | MOVE 3 -> 0:2 | DEL 1 | DEL 8 |Time: 1663013.0
+Step 212 | MOVE 3 -> 0:2 |Time: 2184621.0
+Step 213 | MOVE 3 -> 0:2 | DEL 1 | DEL 12 |Failed to pass all tests
+Step 214 | MOVE 3 -> 0:2 | DEL 1 | DEL 13 |Patch invalid
+Step 215 | MOVE 3 -> 0:2 |Time: 1443456.0
+Step 216 | MOVE 3 -> 0:2 | DEL 1 | DEL 19 |Failed to compile
+Step 217 | MOVE 3 -> 0:2 | DEL 1 | DEL 16 |Failed to compile
+Step 218 | MOVE 3 -> 0:2 | DEL 1 | MOVE 14 -> 1:0 |Failed to pass all tests
+Step 219 | MOVE 3 -> 0:2 | DEL 1 | MOVE 6 -> 0:1 |Patch invalid
+Step 220 | MOVE 3 -> 0:2 | DEL 1 | MOVE 8 -> 2:0 |Time: 1976655.0
+Step 221 | DEL 1 |Time: 1423607.0
+Step 222 | DEL 1 |Time: 1459778.0
+Step 223 | MOVE 3 -> 0:2 | DEL 1 | MOVE 13 -> 0:0 |Patch invalid
+Step 224 | DEL 1 |Time: 1409185.0
+Step 225 | MOVE 3 -> 0:2 | DEL 1 | DEL 15 |Patch invalid
+Step 226 | MOVE 3 -> 0:2 | DEL 1 | DEL 19 |Failed to compile
+Step 227 | MOVE 3 -> 0:2 | DEL 1 | COPY 12 -> 4:0 |Time: 1620411.0
+Step 228 | MOVE 3 -> 0:2 |Time: 2337936.0
+Step 229 | MOVE 3 -> 0:2 | DEL 1 | COPY 19 -> 5:0 |Failed to compile
+Step 230 | MOVE 3 -> 0:2 | DEL 1 | MOVE 6 -> 4:0 |Patch invalid
+Step 231 | MOVE 3 -> 0:2 | DEL 1 | MOVE 4 -> 0:2 |Patch invalid
+Step 232 | MOVE 3 -> 0:2 | DEL 1 | DEL 18 |Failed to pass all tests
+Step 233 | MOVE 3 -> 0:2 | DEL 1 | MOVE 16 -> 4:0 |Failed to compile
+Step 234 | MOVE 3 -> 0:2 | DEL 1 | DEL 8 |Time: 1392397.0
+Step 235 | DEL 1 |Time: 1462455.0
+Step 236 | MOVE 3 -> 0:2 | DEL 1 | DEL 1 |Patch invalid
+Step 237 | MOVE 3 -> 0:2 | DEL 1 | DEL 9 |Time: 1532116.0
+Step 238 | MOVE 3 -> 0:2 |Time: 1801326.0
+Step 239 | MOVE 3 -> 0:2 | DEL 1 | DEL 10 |Failed to pass all tests
+Step 240 | MOVE 3 -> 0:2 | DEL 1 | MOVE 6 -> 2:0 |Patch invalid
+Step 241 | MOVE 3 -> 0:2 | DEL 1 | DEL 10 |Failed to pass all tests
+Step 242 | DEL 1 |Time: 1477428.0
+Step 243 | MOVE 3 -> 0:2 | DEL 1 | COPY 19 -> 5:0 |Failed to compile
+Step 244 | DEL 1 |Time: 1664924.0
+Step 245 | MOVE 3 -> 0:2 | DEL 1 | MOVE 15 -> 6:0 |Patch invalid
+Step 246 | DEL 1 |Time: 1531922.0
+Step 247 | DEL 1 |Time: 1537799.0
+Step 248 | MOVE 3 -> 0:2 | DEL 1 | DEL 2 |Patch invalid
+Step 249 | MOVE 3 -> 0:2 |Time: 2143096.0
+Step 250 | MOVE 3 -> 0:2 |Time: 1397290.0
+Step 251 | MOVE 3 -> 0:2 | DEL 1 | DEL 16 |Failed to compile
+Step 252 | MOVE 3 -> 0:2 |Time: 1788338.0
+Step 253 | MOVE 3 -> 0:2 |Time: 1402908.0
+Step 254 | MOVE 3 -> 0:2 | DEL 1 | DEL 3 |Patch invalid
+Step 255 | MOVE 3 -> 0:2 |Time: 1647096.0
+Step 256 | DEL 1 |Time: 2123734.0
+Step 257 | MOVE 3 -> 0:2 |Time: 2053247.0
+Step 258 | MOVE 3 -> 0:2 | DEL 1 | COPY 17 -> 4:0 |Failed to compile
+Step 259 | DEL 1 |*** New best *** Time: 1368643.0(ns)
+Step 260 |Time: 1806880.0
+Step 261 |Time: 1644903.0
+Step 262 |Time: 1678498.0
+Step 263 | DEL 1 | COPY 2 -> 0:2 |Time: 1543894.0
+Step 264 | DEL 1 | DEL 8 |Time: 1463061.0
+Step 265 | DEL 1 | MOVE 4 -> 4:0 |Patch invalid
+Step 266 | DEL 1 | MOVE 2 -> 2:0 |Patch invalid
+Step 267 | DEL 1 | DEL 8 |Time: 1453803.0
+Step 268 | DEL 1 | DEL 1 |Patch invalid
+Step 269 |Time: 1648132.0
+Step 270 |Time: 1613566.0
+Step 271 | DEL 1 | COPY 14 -> 0:2 |Failed to compile
+Step 272 |Time: 1621817.0
+Step 273 |Time: 1599371.0
+Step 274 | DEL 1 | DEL 9 |Time: 1683920.0
+Step 275 | DEL 1 | COPY 15 -> 3:0 |Time: 1867023.0
+Step 276 | DEL 1 | MOVE 16 -> 0:2 |Failed to compile
+Step 277 |Time: 1613136.0
+Step 278 |Time: 1606991.0
+Step 279 | DEL 1 | DEL 19 |Failed to compile
+Step 280 |Time: 1538260.0
+Step 281 | DEL 1 | MOVE 14 -> 6:0 |Failed to pass all tests
+Step 282 |Time: 1643306.0
+Step 283 |Time: 1591524.0
+Step 284 |Time: 5219457.0
+Step 285 |Time: 1902880.0
+Step 286 |Time: 2390755.0
+Step 287 | DEL 1 | MOVE 13 -> 5:0 |Patch invalid
+Step 288 |Time: 1560388.0
+Step 289 | DEL 1 | DEL 14 |Failed to pass all tests
+Step 290 |Time: 1566690.0
+Step 291 |Time: 2073605.0
+Step 292 | DEL 1 | DEL 17 |Failed to pass all tests
+Step 293 |Time: 1571854.0
+Step 294 | DEL 1 | DEL 18 |Failed to pass all tests
+Step 295 | DEL 1 | DEL 16 |Failed to compile
+Step 296 | DEL 1 | MOVE 17 -> 2:0 |Failed to pass all tests
+Step 297 |Time: 1719528.0
+Step 298 |Time: 1545459.0
+Step 299 | DEL 1 | MOVE 1 -> 4:0 |Patch invalid
+Step 300 |Time: 1539602.0
+Step 301 |Time: 1621080.0
+Step 302 | DEL 1 | MOVE 17 -> 4:0 |Failed to compile
+Step 303 |Time: 1673579.0
+Step 304 | DEL 1 | COPY 17 -> 3:0 |*** New best *** Time: 1323634.0(ns)
+Step 305 | COPY 17 -> 3:0 |Failed to pass all tests
+Step 306 | DEL 1 | COPY 17 -> 3:0 | DEL 18 |Failed to pass all tests
+Step 307 | DEL 1 | COPY 17 -> 3:0 | COPY 1 -> 4:0 |Failed to compile
+Step 308 | DEL 1 |Time: 1405825.0
+Step 309 | DEL 1 | COPY 17 -> 3:0 | MOVE 1 -> 0:1 |Patch invalid
+Step 310 | DEL 1 | COPY 17 -> 3:0 | DEL 3 |Time: 1326876.0
+Step 311 | DEL 1 | COPY 17 -> 3:0 | MOVE 19 -> 1:0 |Failed to compile
+Step 312 | DEL 1 |Time: 1422395.0
+Step 313 | DEL 1 |Time: 1393662.0
+Step 314 | DEL 1 |Time: 2012932.0
+Step 315 | DEL 1 | COPY 17 -> 3:0 | MOVE 4 -> 0:0 |Patch invalid
+Step 316 | COPY 17 -> 3:0 |Failed to pass all tests
+Step 317 | DEL 1 | COPY 17 -> 3:0 | MOVE 9 -> 4:0 |Failed to compile
+Step 318 | DEL 1 | COPY 17 -> 3:0 | COPY 7 -> 0:1 |Failed to compile
+Step 319 | DEL 1 | COPY 17 -> 3:0 | DEL 11 |Patch invalid
+Step 320 | DEL 1 | COPY 17 -> 3:0 | MOVE 5 -> 5:0 |Failed to pass all tests
+Step 321 | DEL 1 | COPY 17 -> 3:0 | MOVE 5 -> 3:0 |Time: 1355336.0
+Step 322 | DEL 1 |Time: 1417998.0
+Step 323 | DEL 1 |Time: 1461468.0
+Step 324 | DEL 1 |Time: 1404398.0
+Step 325 | DEL 1 | COPY 17 -> 3:0 | COPY 18 -> 4:0 |Failed to compile
+Step 326 | COPY 17 -> 3:0 |Failed to pass all tests
+Step 327 | COPY 17 -> 3:0 |Failed to pass all tests
+Step 328 | COPY 17 -> 3:0 |Failed to pass all tests
+Step 329 | DEL 1 | COPY 17 -> 3:0 | DEL 13 |Patch invalid
+Step 330 | DEL 1 |Time: 1383807.0
+Step 331 | DEL 1 |Time: 1366307.0
+Step 332 | COPY 17 -> 3:0 |Failed to pass all tests
+Step 333 | DEL 1 |Time: 1515187.0
+Step 334 | COPY 17 -> 3:0 |Failed to pass all tests
+Step 335 | COPY 17 -> 3:0 |Failed to pass all tests
+Step 336 | COPY 17 -> 3:0 |Failed to pass all tests
+Step 337 | DEL 1 |Time: 1878704.0
+Step 338 | DEL 1 | COPY 17 -> 3:0 | DEL 2 |Patch invalid
+Step 339 | DEL 1 | COPY 17 -> 3:0 | COPY 1 -> 4:0 |Failed to compile
+Step 340 | DEL 1 | COPY 17 -> 3:0 | COPY 10 -> 1:0 |Time: 2133312.0
+Step 341 | DEL 1 | COPY 17 -> 3:0 | DEL 13 |Patch invalid
+Step 342 | DEL 1 | COPY 17 -> 3:0 | DEL 18 |Failed to pass all tests
+Step 343 | DEL 1 |Time: 1376472.0
+Step 344 | DEL 1 | COPY 17 -> 3:0 | MOVE 7 -> 0:0 |Failed to compile
+Step 345 | COPY 17 -> 3:0 |Failed to pass all tests
+Step 346 | DEL 1 | COPY 17 -> 3:0 | COPY 15 -> 2:0 |Time: 1478375.0
+Step 347 | DEL 1 | COPY 17 -> 3:0 | COPY 15 -> 1:0 |Time: 1346087.0
+Step 348 | DEL 1 |Time: 1443213.0
+Step 349 | COPY 17 -> 3:0 |Failed to pass all tests
+Step 350 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 1554674.0
+Step 351 | DEL 1 | COPY 17 -> 3:0 | MOVE 14 -> 5:0 |Time: 1602872.0
+Step 352 | DEL 1 | COPY 17 -> 3:0 | MOVE 3 -> 0:1 |Failed to pass all tests
+Step 353 | DEL 1 | COPY 17 -> 3:0 | DEL 14 |Failed to pass all tests
+Step 354 | DEL 1 | COPY 17 -> 3:0 | DEL 11 |Patch invalid
+Step 355 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 |*** New best *** Time: 1314846.0(ns)
+Step 356 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | COPY 1 -> 4:0 |Failed to compile
+Step 357 | DEL 1 | COPY 17 -> 3:0 |Time: 1480424.0
+Step 358 | DEL 1 | COPY 0 -> 3:2 |Time: 1429652.0
+Step 359 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | DEL 3 |Time: 1458964.0
+Step 360 | DEL 1 | COPY 17 -> 3:0 |Time: 1426706.0
+Step 361 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | DEL 16 |Failed to compile
+Step 362 | DEL 1 | COPY 17 -> 3:0 |Time: 1364484.0
+Step 363 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | MOVE 0 -> 2:0 |Failed to compile
+Step 364 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | MOVE 15 -> 2:0 |Patch invalid
+Step 365 | DEL 1 | COPY 17 -> 3:0 |Time: 1525708.0
+Step 366 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | MOVE 8 -> 2:0 |Time: 1459278.0
+Step 367 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | MOVE 0 -> 2:0 |Failed to compile
+Step 368 | COPY 17 -> 3:0 | COPY 0 -> 3:2 |Failed to compile
+Step 369 | DEL 1 | COPY 0 -> 3:2 |Time: 1472840.0
+Step 370 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | MOVE 2 -> 2:0 |Patch invalid
+Step 371 | DEL 1 | COPY 17 -> 3:0 |Time: 1340400.0
+Step 372 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | MOVE 12 -> 0:2 |Failed to pass all tests
+Step 373 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | MOVE 3 -> 3:1 |Time: 6931787.0
+Step 374 | COPY 17 -> 3:0 | COPY 0 -> 3:2 |Failed to compile
+Step 375 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | DEL 11 |Patch invalid
+Step 376 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | DEL 15 |Patch invalid
+Step 377 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | COPY 13 -> 5:0 |Time: 2020184.0
+Step 378 | DEL 1 | COPY 0 -> 3:2 |Time: 1465543.0
+Step 379 | COPY 17 -> 3:0 | COPY 0 -> 3:2 |Failed to compile
+Step 380 | COPY 17 -> 3:0 | COPY 0 -> 3:2 |Failed to compile
+Step 381 | DEL 1 | COPY 0 -> 3:2 |Time: 1435994.0
+Step 382 | COPY 17 -> 3:0 | COPY 0 -> 3:2 |Failed to compile
+Step 383 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | DEL 2 |Patch invalid
+Step 384 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | COPY 1 -> 4:0 |Failed to compile
+Step 385 | COPY 17 -> 3:0 | COPY 0 -> 3:2 |Failed to compile
+Step 386 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | MOVE 12 -> 5:0 |Failed to pass all tests
+Step 387 | DEL 1 | COPY 0 -> 3:2 |Time: 2069362.0
+Step 388 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | MOVE 11 -> 1:0 |Patch invalid
+Step 389 | COPY 17 -> 3:0 | COPY 0 -> 3:2 |Failed to compile
+Step 390 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | DEL 6 |Patch invalid
+Step 391 | COPY 17 -> 3:0 | COPY 0 -> 3:2 |Failed to compile
+Step 392 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | DEL 7 |Time: 1807679.0
+Step 393 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | MOVE 3 -> 3:1 |Time: 3105145.0
+Step 394 | DEL 1 | COPY 17 -> 3:0 |Time: 1409493.0
+Step 395 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | MOVE 16 -> 2:0 |Failed to compile
+Step 396 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | COPY 5 -> 0:0 |Failed to compile
+Step 397 | COPY 17 -> 3:0 | COPY 0 -> 3:2 |Failed to compile
+Step 398 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | MOVE 6 -> 1:0 |Patch invalid
+Step 399 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | COPY 12 -> 6:1 |Failed to compile
+Step 400 | DEL 1 | COPY 17 -> 3:0 |Time: 1400635.0
+Step 401 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | COPY 1 -> 3:0 |Time: 1401294.0
+Step 402 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | DEL 7 |Time: 1470510.0
+Step 403 | DEL 1 | COPY 0 -> 3:2 |Time: 1574846.0
+Step 404 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | DEL 13 |Patch invalid
+Step 405 | COPY 17 -> 3:0 | COPY 0 -> 3:2 |Failed to compile
+Step 406 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | DEL 15 |Patch invalid
+Step 407 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | DEL 19 |Failed to compile
+Step 408 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | DEL 4 |Patch invalid
+Step 409 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | DEL 6 |Patch invalid
+Step 410 | DEL 1 | COPY 0 -> 3:2 |Time: 1616202.0
+Step 411 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | MOVE 10 -> 1:0 |Failed to pass all tests
+Step 412 | COPY 17 -> 3:0 | COPY 0 -> 3:2 |Failed to compile
+Step 413 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | COPY 0 -> 4:0 |Failed to compile
+Step 414 | DEL 1 | COPY 0 -> 3:2 |Time: 1386894.0
+Step 415 | DEL 1 | COPY 17 -> 3:0 | COPY 0 -> 3:2 | MOVE 2 -> 6:2 |Patch invalid
+Step 416 | COPY 17 -> 3:0 | COPY 0 -> 3:2 |Failed to compile
+Step 417 | DEL 1 | COPY 17 -> 3:0 |*** New best *** Time: 1309190.0(ns)
+Step 418 | DEL 1 | COPY 17 -> 3:0 | DEL 11 |Patch invalid
+Step 419 | DEL 1 | COPY 17 -> 3:0 | MOVE 19 -> 5:0 |Failed to compile
+Step 420 | DEL 1 |Time: 1502767.0
+Step 421 | COPY 17 -> 3:0 |Failed to pass all tests
+Step 422 | DEL 1 |Time: 1324996.0
+Step 423 | DEL 1 | COPY 17 -> 3:0 | COPY 17 -> 1:0 |Time: 1421152.0
+Step 424 | DEL 1 | COPY 17 -> 3:0 | COPY 17 -> 2:0 |Time: 1496111.0
+Step 425 | COPY 17 -> 3:0 |Failed to pass all tests
+Step 426 | DEL 1 | COPY 17 -> 3:0 | COPY 16 -> 4:0 |Failed to compile
+Step 427 | DEL 1 |Time: 1394873.0
+Step 428 | DEL 1 | COPY 17 -> 3:0 | DEL 3 |Time: 1427309.0
+Step 429 | DEL 1 | COPY 17 -> 3:0 | MOVE 1 -> 3:0 |Patch invalid
+Step 430 | DEL 1 |Time: 4207205.0
+Step 431 | DEL 1 | COPY 17 -> 3:0 | MOVE 3 -> 1:0 |Time: 2996264.0
+Step 432 | DEL 1 | COPY 17 -> 3:0 | MOVE 5 -> 0:1 |Failed to compile
+Step 433 | DEL 1 | COPY 17 -> 3:0 | DEL 18 |Failed to pass all tests
+Step 434 | COPY 17 -> 3:0 |Failed to pass all tests
+Step 435 | DEL 1 |Time: 1340167.0
+Step 436 | DEL 1 | COPY 17 -> 3:0 | MOVE 15 -> 1:0 |Patch invalid
+Step 437 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 1400004.0
+Step 438 | COPY 17 -> 3:0 |Failed to pass all tests
+Step 439 | DEL 1 | COPY 17 -> 3:0 | COPY 2 -> 5:0 |Failed to compile
+Step 440 | DEL 1 | COPY 17 -> 3:0 | MOVE 13 -> 2:0 |Patch invalid
+Step 441 | DEL 1 |Time: 1351307.0
+Step 442 | DEL 1 | COPY 17 -> 3:0 | DEL 1 |Patch invalid
+Step 443 | DEL 1 | COPY 17 -> 3:0 | DEL 10 |Failed to pass all tests
+Step 444 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |*** New best *** Time: 1309173.0(ns)
+Step 445 | COPY 17 -> 3:0 | DEL 5 |Time: 1364124.0
+Step 446 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 |*** New best *** Time: 1293367.0(ns)
+Step 447 | COPY 17 -> 3:0 | DEL 5 | DEL 9 |Time: 1410959.0
+Step 448 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | MOVE 13 -> 0:2 |Patch invalid
+Step 449 | DEL 1 | COPY 17 -> 3:0 | DEL 9 |Time: 1344931.0
+Step 450 | COPY 17 -> 3:0 | DEL 5 | DEL 9 |Time: 1385345.0
+Step 451 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 9 -> 1:0 |Time: 1679005.0
+Step 452 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 8 -> 5:0 |Failed to pass all tests
+Step 453 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 0 -> 2:0 |Time: 6246540.0
+Step 454 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 6 |Patch invalid
+Step 455 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 3 |Time: 9629780.0
+Step 456 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | MOVE 19 -> 4:0 |Failed to compile
+Step 457 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | MOVE 14 -> 2:0 |Failed to pass all tests
+Step 458 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 8939472.0
+Step 459 | COPY 17 -> 3:0 | DEL 5 | DEL 9 |Time: 2570563.0
+Step 460 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 5 |Patch invalid
+Step 461 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 2026697.0
+Step 462 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 19 |Failed to compile
+Step 463 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 1998764.0
+Step 464 | COPY 17 -> 3:0 | DEL 5 | DEL 9 |Time: 1483802.0
+Step 465 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 5 |Patch invalid
+Step 466 | COPY 17 -> 3:0 | DEL 5 | DEL 9 |Time: 1359273.0
+Step 467 | DEL 1 | COPY 17 -> 3:0 | DEL 9 |Time: 1415967.0
+Step 468 | DEL 1 | DEL 5 | DEL 9 |Time: 1327905.0
+Step 469 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 13 -> 4:0 |Failed to compile
+Step 470 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 1506965.0
+Step 471 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 15 |Patch invalid
+Step 472 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 16 |Failed to compile
+Step 473 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 2 |Patch invalid
+Step 474 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 1544734.0
+Step 475 | DEL 1 | COPY 17 -> 3:0 | DEL 9 |Time: 1443355.0
+Step 476 | DEL 1 | COPY 17 -> 3:0 | DEL 9 |Time: 2369618.0
+Step 477 | DEL 1 | DEL 5 | DEL 9 |Time: 1305329.0
+Step 478 | COPY 17 -> 3:0 | DEL 5 | DEL 9 |Time: 1469505.0
+Step 479 | DEL 1 | COPY 17 -> 3:0 | DEL 9 |Time: 1366539.0
+Step 480 | COPY 17 -> 3:0 | DEL 5 | DEL 9 |Time: 1389990.0
+Step 481 | DEL 1 | COPY 17 -> 3:0 | DEL 9 |Time: 1307086.0
+Step 482 | DEL 1 | COPY 17 -> 3:0 | DEL 9 |Time: 1306512.0
+Step 483 | DEL 1 | DEL 5 | DEL 9 |Time: 1364215.0
+Step 484 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 2157797.0
+Step 485 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 1959891.0
+Step 486 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 7 |Time: 3058777.0
+Step 487 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 6 -> 0:2 |Failed to compile
+Step 488 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | MOVE 8 -> 5:0 |Failed to pass all tests
+Step 489 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 3108268.0
+Step 490 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 2066275.0
+Step 491 | COPY 17 -> 3:0 | DEL 5 | DEL 9 |Time: 1921989.0
+Step 492 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 1979445.0
+Step 493 | DEL 1 | DEL 5 | DEL 9 |Time: 1607927.0
+Step 494 | COPY 17 -> 3:0 | DEL 5 | DEL 9 |Time: 2954645.0
+Step 495 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 16 -> 1:0 |Time: 1815906.0
+Step 496 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 6629671.0
+Step 497 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 16 |Failed to compile
+Step 498 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 0 |Failed to compile
+Step 499 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 1780820.0
+Step 500 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 1521369.0
+Step 501 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | MOVE 7 -> 3:2 |Time: 2390621.0
+Step 502 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 7 |Time: 2193731.0
+Step 503 | DEL 1 | COPY 17 -> 3:0 | DEL 9 |Time: 2896656.0
+Step 504 | COPY 17 -> 3:0 | DEL 5 | DEL 9 |Time: 1879211.0
+Step 505 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 2 -> 6:1 |Failed to compile
+Step 506 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | MOVE 10 -> 2:0 |Failed to pass all tests
+Step 507 | DEL 1 | DEL 5 | DEL 9 |Time: 1716001.0
+Step 508 | DEL 1 | DEL 5 | DEL 9 |Time: 3785513.0
+Step 509 | DEL 1 | COPY 17 -> 3:0 | DEL 9 |Time: 1667137.0
+Step 510 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | MOVE 12 -> 5:0 |Failed to pass all tests
+Step 511 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 16 -> 4:0 |Failed to compile
+Step 512 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | MOVE 7 -> 0:1 |Failed to compile
+Step 513 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 7 |Time: 6155069.0
+Step 514 | COPY 17 -> 3:0 | DEL 5 | DEL 9 |Time: 1598223.0
+Step 515 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 13 |Patch invalid
+Step 516 | DEL 1 | DEL 5 | DEL 9 |Time: 1346557.0
+Step 517 | COPY 17 -> 3:0 | DEL 5 | DEL 9 |Time: 1644724.0
+Step 518 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | MOVE 17 -> 0:1 |Failed to compile
+Step 519 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 19 -> 2:0 |Time: 1450881.0
+Step 520 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | MOVE 3 -> 1:0 |Time: 2031357.0
+Step 521 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 13 |Patch invalid
+Step 522 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 13 |Patch invalid
+Step 523 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 2387879.0
+Step 524 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 7 -> 0:2 |Failed to compile
+Step 525 | COPY 17 -> 3:0 | DEL 5 | DEL 9 |Time: 2117377.0
+Step 526 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | MOVE 0 -> 1:0 |Failed to compile
+Step 527 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 1612094.0
+Step 528 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 1491567.0
+Step 529 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 1842804.0
+Step 530 | DEL 1 | DEL 5 | DEL 9 |Time: 2078138.0
+Step 531 | DEL 1 | COPY 17 -> 3:0 | DEL 9 |Time: 1509642.0
+Step 532 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 4 |Patch invalid
+Step 533 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 1623006.0
+Step 534 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | MOVE 8 -> 2:0 |Time: 1566654.0
+Step 535 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 1602795.0
+Step 536 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | MOVE 1 -> 6:2 |Patch invalid
+Step 537 | COPY 17 -> 3:0 | DEL 5 | DEL 9 |Time: 1630038.0
+Step 538 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 1922299.0
+Step 539 | DEL 1 | COPY 17 -> 3:0 | DEL 9 |Time: 1665570.0
+Step 540 | DEL 1 | DEL 5 | DEL 9 |Time: 1571369.0
+Step 541 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | MOVE 5 -> 6:1 |Patch invalid
+Step 542 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 3 |Time: 1432135.0
+Step 543 | COPY 17 -> 3:0 | DEL 5 | DEL 9 |Time: 1717630.0
+Step 544 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 1445079.0
+Step 545 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 13 |Patch invalid
+Step 546 | COPY 17 -> 3:0 | DEL 5 | DEL 9 |Time: 2003963.0
+Step 547 | DEL 1 | DEL 5 | DEL 9 |Time: 1841801.0
+Step 548 | DEL 1 | DEL 5 | DEL 9 |Time: 1523126.0
+Step 549 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 1605662.0
+Step 550 | DEL 1 | COPY 17 -> 3:0 | DEL 9 |Time: 1989526.0
+Step 551 | COPY 17 -> 3:0 | DEL 5 | DEL 9 |Time: 1584763.0
+Step 552 | DEL 1 | COPY 17 -> 3:0 | DEL 9 |Time: 1.4953535E7
+Step 553 | COPY 17 -> 3:0 | DEL 5 | DEL 9 |Time: 1562615.0
+Step 554 | DEL 1 | COPY 17 -> 3:0 | DEL 9 |Time: 1561910.0
+Step 555 | DEL 1 | COPY 17 -> 3:0 | DEL 9 |Time: 4319914.0
+Step 556 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | MOVE 5 -> 6:2 |Patch invalid
+Step 557 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 2014884.0
+Step 558 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 5 -> 0:1 |Failed to compile
+Step 559 | COPY 17 -> 3:0 | DEL 5 | DEL 9 |Time: 1838166.0
+Step 560 | DEL 1 | COPY 17 -> 3:0 | DEL 9 |Time: 2019925.0
+Step 561 | DEL 1 | COPY 17 -> 3:0 | DEL 9 |Time: 1421993.0
+Step 562 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 1 |Patch invalid
+Step 563 | DEL 1 | DEL 5 | DEL 9 |Time: 2163088.0
+Step 564 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 6 -> 3:0 |Time: 1467278.0
+Step 565 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | MOVE 11 -> 4:0 |Patch invalid
+Step 566 | DEL 1 | COPY 17 -> 3:0 | DEL 9 |Time: 1604698.0
+Step 567 | DEL 1 | COPY 17 -> 3:0 | DEL 5 |Time: 1540382.0
+Step 568 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 12 -> 5:0 |Failed to compile
+Step 569 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 16 |Failed to compile
+Step 570 | DEL 1 | COPY 17 -> 3:0 | DEL 9 |Time: 1640633.0
+Step 571 | DEL 1 | COPY 17 -> 3:0 | DEL 9 |Time: 1320061.0
+Step 572 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 4:0 |Failed to pass all tests
+Step 573 | COPY 17 -> 3:0 | DEL 5 | DEL 9 |Time: 1327328.0
+Step 574 | COPY 17 -> 3:0 | DEL 5 | DEL 9 |Time: 1428180.0
+Step 575 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 |*** New best *** Time: 1273796.0(ns)
+Step 576 | DEL 1 | COPY 17 -> 3:0 | DEL 9 | COPY 3 -> 3:1 |Time: 1490590.0
+Step 577 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 4 |Patch invalid
+Step 578 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 17 |Failed to pass all tests
+Step 579 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 6 |Patch invalid
+Step 580 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | MOVE 14 -> 2:0 |Failed to pass all tests
+Step 581 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 |*** New best *** Time: 1236246.0(ns)
+Step 582 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 |Time: 1249095.0
+Step 583 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | DEL 13 |Patch invalid
+Step 584 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 |Time: 1387196.0
+Step 585 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 |*** New best *** Time: 1200568.0(ns)
+Step 586 | DEL 1 | COPY 17 -> 3:0 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 |Time: 1446720.0
+Step 587 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | MOVE 14 -> 0:1 |Failed to compile
+Step 588 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 |Time: 1842874.0
+Step 589 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | DEL 4 |Patch invalid
+Step 590 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 |Time: 2883564.0
+Step 591 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | MOVE 15 -> 4:0 |Patch invalid
+Step 592 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 |Time: 1753128.0
+Step 593 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |*** New best *** Time: 1181935.0(ns)
+Step 594 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 13 -> 3:2 |Time: 1294475.0
+Step 595 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | COPY 15 -> 0:1 |Failed to compile
+Step 596 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 |Time: 1650948.0
+Step 597 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | MOVE 3 -> 3:1 |Time: 1563673.0
+Step 598 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | MOVE 5 -> 1:0 |Patch invalid
+Step 599 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 4100670.0
+Step 600 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | MOVE 14 -> 2:0 |Failed to pass all tests
+Step 601 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 |Time: 1406705.0
+Step 602 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 19 |Failed to compile
+Step 603 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1214217.0
+Step 604 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | COPY 6 -> 3:0 |Time: 1276897.0
+Step 605 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1228808.0
+Step 606 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | MOVE 3 -> 5:0 |Failed to compile
+Step 607 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | MOVE 18 -> 2:0 |Failed to pass all tests
+Step 608 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | COPY 6 -> 4:0 |Failed to compile
+Step 609 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | COPY 7 -> 0:2 |Failed to compile
+Step 610 | DEL 1 | COPY 17 -> 3:0 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1440173.0
+Step 611 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | COPY 18 -> 4:0 |Failed to compile
+Step 612 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | COPY 12 -> 1:0 |Time: 1215105.0
+Step 613 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 17 |Failed to pass all tests
+Step 614 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 13 |Patch invalid
+Step 615 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | MOVE 2 -> 4:0 |Patch invalid
+Step 616 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1206832.0
+Step 617 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1288505.0
+Step 618 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1270218.0
+Step 619 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1747840.0
+Step 620 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | COPY 4 -> 5:0 |Failed to compile
+Step 621 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | COPY 15 -> 6:0 |Failed to pass all tests
+Step 622 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | COPY 13 -> 3:2 |Time: 1766296.0
+Step 623 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1788304.0
+Step 624 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | MOVE 7 -> 2:0 |Time: 1472143.0
+Step 625 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 13 -> 3:2 |Time: 1333197.0
+Step 626 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1312459.0
+Step 627 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 3 |Time: 1272982.0
+Step 628 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 |Time: 1293538.0
+Step 629 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 15 |Patch invalid
+Step 630 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | MOVE 6 -> 0:1 |Patch invalid
+Step 631 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | MOVE 12 -> 0:1 |Failed to pass all tests
+Step 632 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | MOVE 14 -> 6:2 |Failed to pass all tests
+Step 633 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | COPY 8 -> 6:0 |Failed to pass all tests
+Step 634 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1294648.0
+Step 635 | DEL 1 | COPY 17 -> 3:0 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1209673.0
+Step 636 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | COPY 19 -> 6:0 |Failed to compile
+Step 637 | DEL 1 | COPY 17 -> 3:0 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1264150.0
+Step 638 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 1 |Patch invalid
+Step 639 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | COPY 13 -> 5:0 |Time: 1369449.0
+Step 640 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 |Time: 1754802.0
+Step 641 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | COPY 18 -> 5:0 |Failed to compile
+Step 642 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 17 |Failed to pass all tests
+Step 643 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | COPY 10 -> 1:0 |Time: 1719990.0
+Step 644 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | COPY 8 -> 2:0 |Time: 1437264.0
+Step 645 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 13 -> 3:2 |Time: 1210961.0
+Step 646 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1294398.0
+Step 647 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | MOVE 16 -> 4:0 |Failed to compile
+Step 648 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1267439.0
+Step 649 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1250456.0
+Step 650 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1265751.0
+Step 651 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | MOVE 3 -> 3:1 |Time: 1321501.0
+Step 652 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 13 -> 3:2 |Time: 1204566.0
+Step 653 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | COPY 8 -> 3:0 |Time: 1209219.0
+Step 654 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | MOVE 10 -> 4:0 |Failed to pass all tests
+Step 655 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1830554.0
+Step 656 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1472603.0
+Step 657 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 13 -> 3:2 |Time: 1284121.0
+Step 658 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 15 |Patch invalid
+Step 659 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |*** New best *** Time: 1177503.0(ns)
+Step 660 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1200172.0
+Step 661 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1296845.0
+Step 662 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 12 |Failed to pass all tests
+Step 663 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 4 -> 4:0 |Patch invalid
+Step 664 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 4 -> 2:0 |Patch invalid
+Step 665 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 9 -> 0:0 |Patch invalid
+Step 666 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 2 |Patch invalid
+Step 667 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 12 -> 1:0 |Failed to pass all tests
+Step 668 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1282132.0
+Step 669 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 8 -> 0:0 |Patch invalid
+Step 670 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 0 -> 3:0 |Time: 1289387.0
+Step 671 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 1 -> 4:0 |Failed to compile
+Step 672 | DEL 1 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1836295.0
+Step 673 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 2888047.0
+Step 674 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1606168.0
+Step 675 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 15 -> 0:0 |Failed to compile
+Step 676 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 9 -> 4:0 |Patch invalid
+Step 677 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 17 -> 2:0 |Failed to pass all tests
+Step 678 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 9 -> 0:0 |Failed to compile
+Step 679 | DEL 1 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1218627.0
+Step 680 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1269179.0
+Step 681 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 9 -> 2:0 |Time: 1309161.0
+Step 682 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1455945.0
+Step 683 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 4 |Patch invalid
+Step 684 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | DEL 7 |Time: 1191431.0
+Step 685 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1273920.0
+Step 686 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 8 -> 5:0 |Patch invalid
+Step 687 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 0 -> 6:0 |Failed to compile
+Step 688 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 2007100.0
+Step 689 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 6 -> 1:0 |Patch invalid
+Step 690 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1377599.0
+Step 691 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 1 -> 5:0 |Failed to compile
+Step 692 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 13 -> 3:2 | DEL 7 |Time: 1230631.0
+Step 693 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1309286.0
+Step 694 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1272450.0
+Step 695 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 13 -> 3:2 | DEL 7 |Time: 1181133.0
+Step 696 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 13 -> 3:2 | DEL 7 |Time: 1227763.0
+Step 697 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 3 -> 2:0 |Time: 1266888.0
+Step 698 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 2 -> 2:0 |Time: 2127318.0
+Step 699 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 13 -> 1:0 |Time: 1743661.0
+Step 700 | DEL 1 | COPY 17 -> 3:0 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1756797.0
+Step 701 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 2 |Patch invalid
+Step 702 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 14 |Failed to pass all tests
+Step 703 | DEL 1 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1213432.0
+Step 704 | DEL 1 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1217314.0
+Step 705 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 4 |Patch invalid
+Step 706 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 1 |Patch invalid
+Step 707 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 14 |Failed to pass all tests
+Step 708 | DEL 1 | COPY 17 -> 3:0 | DEL 9 | COPY 3 -> 3:1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1242990.0
+Step 709 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |*** New best *** Time: 1177080.0(ns)
+Step 710 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 2 -> 0:2 |Patch invalid
+Step 711 | DEL 1 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1182840.0
+Step 712 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 15 -> 5:0 |Patch invalid
+Step 713 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1389780.0
+Step 714 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 4 -> 6:2 |Failed to compile
+Step 715 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 19 -> 3:2 |Time: 1820387.0
+Step 716 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 18 -> 6:1 |Failed to pass all tests
+Step 717 | DEL 1 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1196812.0
+Step 718 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 13 -> 3:2 | DEL 7 |Time: 1221488.0
+Step 719 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1306398.0
+Step 720 | DEL 1 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1252030.0
+Step 721 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 13 -> 3:2 | DEL 7 |Time: 1375513.0
+Step 722 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | DEL 7 |Time: 1394731.0
+Step 723 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 17 -> 2:0 |Failed to pass all tests
+Step 724 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 7 -> 6:2 |Patch invalid
+Step 725 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 1 |Patch invalid
+Step 726 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 5 |Patch invalid
+Step 727 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1769329.0
+Step 728 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 14 |Failed to pass all tests
+Step 729 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 4 |Patch invalid
+Step 730 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 9 |Patch invalid
+Step 731 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 8 -> 5:0 |Patch invalid
+Step 732 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 9 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 4 |Patch invalid
+Step 733 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |*** New best *** Time: 1173021.0(ns)
+Step 734 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 2 -> 6:1 |Patch invalid
+Step 735 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1247418.0
+Step 736 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 18 -> 1:0 |Failed to pass all tests
+Step 737 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 16 -> 2:0 |Time: 1218442.0
+Step 738 | DEL 1 | COPY 17 -> 3:0 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1225456.0
+Step 739 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 13 -> 3:2 | DEL 7 |Time: 1909459.0
+Step 740 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 2007535.0
+Step 741 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 2 -> 3:0 |Patch invalid
+Step 742 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 1 -> 5:0 |Failed to compile
+Step 743 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 2 |Patch invalid
+Step 744 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 15 -> 6:0 |Failed to pass all tests
+Step 745 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | DEL 7 |Time: 1193701.0
+Step 746 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1244585.0
+Step 747 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 2 |Patch invalid
+Step 748 | DEL 1 | COPY 17 -> 3:0 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1210861.0
+Step 749 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | DEL 7 |Time: 1292916.0
+Step 750 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1878854.0
+Step 751 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 4 -> 2:0 |Patch invalid
+Step 752 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 17 |Failed to pass all tests
+Step 753 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 15 -> 5:0 |Time: 5499448.0
+Step 754 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 14 -> 6:0 |Failed to pass all tests
+Step 755 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1425091.0
+Step 756 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 10 -> 4:0 |Failed to compile
+Step 757 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 8 -> 0:2 |Failed to compile
+Step 758 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 10 -> 6:0 |Failed to compile
+Step 759 | DEL 1 | COPY 17 -> 3:0 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1759464.0
+Step 760 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 10 -> 1:0 |Failed to pass all tests
+Step 761 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1570273.0
+Step 762 | DEL 1 | COPY 17 -> 3:0 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1244348.0
+Step 763 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 7 |Patch invalid
+Step 764 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 15 |Patch invalid
+Step 765 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1289332.0
+Step 766 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 18 |Failed to pass all tests
+Step 767 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 0 |Failed to compile
+Step 768 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 18 -> 4:0 |Failed to compile
+Step 769 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 5 |Patch invalid
+Step 770 | DEL 1 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1785647.0
+Step 771 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 5 |Patch invalid
+Step 772 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 1 -> 0:2 |Failed to compile
+Step 773 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 2 |Patch invalid
+Step 774 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 16 -> 0:2 |Failed to compile
+Step 775 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 8 -> 4:0 |Patch invalid
+Step 776 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | DEL 7 |Time: 1538762.0
+Step 777 | DEL 1 | COPY 17 -> 3:0 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1187071.0
+Step 778 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 8 -> 6:1 |Time: 1779424.0
+Step 779 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 4 -> 1:0 |Time: 1717078.0
+Step 780 | DEL 1 | COPY 17 -> 3:0 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1357475.0
+Step 781 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 13 -> 3:2 | DEL 7 |Time: 1292249.0
+Step 782 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 9 -> 2:0 |Time: 1252684.0
+Step 783 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1234503.0
+Step 784 | DEL 1 | COPY 17 -> 3:0 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1857945.0
+Step 785 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | DEL 7 |Time: 1803039.0
+Step 786 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 8 -> 4:0 |Patch invalid
+Step 787 | DEL 1 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1464053.0
+Step 788 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 1 -> 0:1 |Patch invalid
+Step 789 | DEL 1 | COPY 17 -> 3:0 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 2013234.0
+Step 790 | DEL 1 | COPY 17 -> 3:0 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1961680.0
+Step 791 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 15 -> 5:0 |Time: 2203235.0
+Step 792 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 17 |Failed to pass all tests
+Step 793 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 13 -> 3:2 | DEL 7 |Time: 1962797.0
+Step 794 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1930961.0
+Step 795 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 14 -> 3:0 |Failed to pass all tests
+Step 796 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 7 -> 4:0 |Failed to compile
+Step 797 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 1 -> 1:0 |Patch invalid
+Step 798 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | DEL 7 |Time: 2014702.0
+Step 799 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1474321.0
+Step 800 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 13 -> 3:2 | DEL 7 |Time: 1823940.0
+Step 801 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 10 -> 6:0 |Failed to compile
+Step 802 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 4 |Patch invalid
+Step 803 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 16 |Failed to compile
+Step 804 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 16 |Failed to compile
+Step 805 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 2254129.0
+Step 806 | DEL 1 | COPY 17 -> 3:0 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1939971.0
+Step 807 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 2150814.0
+Step 808 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 0 -> 3:1 |Time: 3114377.0
+Step 809 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | DEL 7 |Time: 1993898.0
+Step 810 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 7 |Patch invalid
+Step 811 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | DEL 7 |Time: 1877946.0
+Step 812 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 18 |Failed to pass all tests
+Step 813 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 8 -> 6:2 |Time: 3040697.0
+Step 814 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 10 -> 1:0 |Failed to pass all tests
+Step 815 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 2324129.0
+Step 816 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 14 -> 1:0 |Time: 2911425.0
+Step 817 | DEL 1 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1562311.0
+Step 818 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 16 -> 1:0 |Failed to compile
+Step 819 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 3091926.0
+Step 820 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 16 |Failed to compile
+Step 821 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 2329391.0
+Step 822 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | DEL 7 |Time: 2222247.0
+Step 823 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 2 |Patch invalid
+Step 824 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 15 -> 0:0 |Failed to compile
+Step 825 | DEL 1 | COPY 17 -> 3:0 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1402751.0
+Step 826 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 1 |Patch invalid
+Step 827 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 4 -> 1:0 |Patch invalid
+Step 828 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1539410.0
+Step 829 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 11 -> 3:1 |Patch invalid
+Step 830 | DEL 1 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1407712.0
+Step 831 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 13 |Patch invalid
+Step 832 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 17 |Failed to pass all tests
+Step 833 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 1 |Patch invalid
+Step 834 | DEL 1 | COPY 17 -> 3:0 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 2229710.0
+Step 835 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 7 -> 5:0 |Patch invalid
+Step 836 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 2010762.0
+Step 837 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 2 |Patch invalid
+Step 838 | DEL 1 | COPY 17 -> 3:0 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 11 -> 4:0 |Time: 1511991.0
+Step 839 | DEL 1 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |*** New best *** Time: 1122782.0(ns)
+Step 840 | DEL 1 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 1 -> 4:0 |Failed to compile
+Step 841 | DEL 1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1248318.0
+Step 842 | DEL 1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1215286.0
+Step 843 | DEL 1 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | DEL 7 |Time: 1210447.0
+Step 844 | DEL 1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 2342158.0
+Step 845 | DEL 1 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 18 |Failed to pass all tests
+Step 846 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 2105270.0
+Step 847 | DEL 1 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 4 -> 5:0 |Patch invalid
+Step 848 | DEL 1 | DEL 5 | DEL 8 | COPY 13 -> 3:2 | DEL 7 |Time: 5506983.0
+Step 849 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1135530.0
+Step 850 | DEL 1 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 8 -> 0:1 |Patch invalid
+Step 851 | DEL 1 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 4 |Patch invalid
+Step 852 | DEL 1 | DEL 5 | DEL 8 | COPY 13 -> 3:2 | DEL 7 |Time: 1214692.0
+Step 853 | DEL 1 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 15 |Patch invalid
+Step 854 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1233788.0
+Step 855 | DEL 1 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | DEL 7 |Time: 1671598.0
+Step 856 | DEL 1 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 5 |Patch invalid
+Step 857 | DEL 1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1346216.0
+Step 858 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1951868.0
+Step 859 | DEL 1 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 2 -> 1:0 |Patch invalid
+Step 860 | DEL 1 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | DEL 7 |Time: 1728908.0
+Step 861 | DEL 1 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 16 |Failed to compile
+Step 862 | DEL 1 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1322361.0
+Step 863 | DEL 1 | DEL 5 | DEL 8 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 5 |Patch invalid
+Step 864 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |*** New best *** Time: 1096173.0(ns)
+Step 865 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 19 -> 1:0 |Time: 1527545.0
+Step 866 | DEL 1 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1964191.0
+Step 867 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 8 -> 5:0 |Failed to pass all tests
+Step 868 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | DEL 7 |Time: 8001163.0
+Step 869 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 13 |Patch invalid
+Step 870 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 19 |Failed to compile
+Step 871 | DEL 1 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1712967.0
+Step 872 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 17 -> 3:1 |Failed to pass all tests
+Step 873 | DEL 1 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1441873.0
+Step 874 | DEL 1 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1225867.0
+Step 875 | DEL 1 | DEL 5 | COPY 13 -> 3:2 | DEL 7 |Time: 2092848.0
+Step 876 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1732646.0
+Step 877 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 5 |Patch invalid
+Step 878 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 14 -> 5:0 |Time: 1790925.0
+Step 879 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 3 |Time: 2310364.0
+Step 880 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 10 |Failed to pass all tests
+Step 881 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1330203.0
+Step 882 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1793613.0
+Step 883 | DEL 1 | DEL 5 | COPY 13 -> 3:2 | DEL 7 |Time: 2371387.0
+Step 884 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 2593362.0
+Step 885 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1742247.0
+Step 886 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1236037.0
+Step 887 | DEL 1 | DEL 5 | COPY 13 -> 3:2 | DEL 7 |Time: 2015084.0
+Step 888 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 3 -> 4:0 |Failed to compile
+Step 889 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 2510035.0
+Step 890 | DEL 1 | DEL 5 | COPY 13 -> 3:2 | DEL 7 |Time: 1594405.0
+Step 891 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 14 |Failed to pass all tests
+Step 892 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1811041.0
+Step 893 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | DEL 7 |Time: 2015986.0
+Step 894 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 2 -> 6:0 |Failed to compile
+Step 895 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 13 |Patch invalid
+Step 896 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 17 -> 3:2 |Failed to pass all tests
+Step 897 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 16 |Failed to compile
+Step 898 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | DEL 7 |Time: 1288265.0
+Step 899 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 5 |Patch invalid
+Step 900 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | DEL 7 |Time: 1897973.0
+Step 901 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 18 -> 6:0 |Failed to compile
+Step 902 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 8 -> 6:2 |Time: 1940081.0
+Step 903 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | DEL 7 |Time: 1994792.0
+Step 904 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 9 -> 0:0 |Failed to compile
+Step 905 | DEL 1 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 2523828.0
+Step 906 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 12 -> 4:0 |Time: 3006900.0
+Step 907 | DEL 1 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 3880481.0
+Step 908 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 17 -> 3:2 |Time: 1223356.0
+Step 909 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 5 -> 0:0 |Failed to compile
+Step 910 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1908418.0
+Step 911 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | DEL 7 |Time: 1395111.0
+Step 912 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | DEL 7 |Time: 1219922.0
+Step 913 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 12 -> 2:0 |Time: 1800672.0
+Step 914 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1769594.0
+Step 915 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 0 -> 6:1 |Failed to compile
+Step 916 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 4 -> 5:0 |Failed to compile
+Step 917 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | DEL 7 |Time: 1579149.0
+Step 918 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | DEL 7 |Time: 1306672.0
+Step 919 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1292384.0
+Step 920 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | DEL 7 |Time: 1959760.0
+Step 921 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 17 -> 5:0 |Failed to pass all tests
+Step 922 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 11 |Patch invalid
+Step 923 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | DEL 7 |Time: 1441604.0
+Step 924 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 11 -> 5:0 |Patch invalid
+Step 925 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 11 -> 4:0 |Time: 2179837.0
+Step 926 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 2 -> 5:0 |Patch invalid
+Step 927 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 1 -> 2:0 |Patch invalid
+Step 928 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 8719338.0
+Step 929 | DEL 1 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1754468.0
+Step 930 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 0 |Failed to compile
+Step 931 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 4 -> 0:1 |Patch invalid
+Step 932 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 6 -> 0:2 |Patch invalid
+Step 933 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 8 |Time: 3592134.0
+Step 934 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 8 -> 1:0 |Time: 1213964.0
+Step 935 | DEL 1 | DEL 5 | COPY 13 -> 3:2 | DEL 7 |Time: 1234105.0
+Step 936 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 1 -> 5:0 |Patch invalid
+Step 937 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 15 |Patch invalid
+Step 938 | DEL 1 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1700812.0
+Step 939 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | DEL 7 |Time: 1940997.0
+Step 940 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 0 -> 1:0 |Failed to compile
+Step 941 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 13 -> 5:0 |Patch invalid
+Step 942 | DEL 1 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1397653.0
+Step 943 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 6 -> 2:0 |Time: 1205417.0
+Step 944 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | DEL 7 |Time: 1834144.0
+Step 945 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 0 -> 1:0 |Time: 2304179.0
+Step 946 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 7 |Patch invalid
+Step 947 | DEL 1 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1676366.0
+Step 948 | DEL 1 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1439487.0
+Step 949 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 13 |Patch invalid
+Step 950 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1289962.0
+Step 951 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1905349.0
+Step 952 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 0 -> 1:0 |Failed to compile
+Step 953 | DEL 1 | DEL 5 | COPY 13 -> 3:2 | DEL 7 |Time: 1388958.0
+Step 954 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1337134.0
+Step 955 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 2508293.0
+Step 956 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1843173.0
+Step 957 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 10 -> 4:0 |Failed to pass all tests
+Step 958 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 17 |Failed to pass all tests
+Step 959 | DEL 1 | DEL 5 | COPY 13 -> 3:2 | DEL 7 |Time: 1371626.0
+Step 960 | DEL 1 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1801194.0
+Step 961 | DEL 1 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 2482541.0
+Step 962 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 13 -> 4:0 |Failed to compile
+Step 963 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | DEL 7 |Time: 1931001.0
+Step 964 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1611905.0
+Step 965 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 19 -> 1:0 |Time: 1800790.0
+Step 966 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1728794.0
+Step 967 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1496243.0
+Step 968 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1350282.0
+Step 969 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 2074763.0
+Step 970 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | DEL 7 |Time: 1260589.0
+Step 971 | DEL 1 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1840816.0
+Step 972 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 19 -> 0:1 |Failed to compile
+Step 973 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 3 |Time: 1620982.0
+Step 974 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 2 |Patch invalid
+Step 975 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 16 -> 5:0 |Time: 1258823.0
+Step 976 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 18 |Failed to pass all tests
+Step 977 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 11 -> 3:2 |Patch invalid
+Step 978 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 10 -> 3:0 |Failed to pass all tests
+Step 979 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 15 |Patch invalid
+Step 980 | DEL 1 | DEL 5 | COPY 13 -> 3:2 | DEL 7 |Time: 1879539.0
+Step 981 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 17 -> 5:0 |Failed to pass all tests
+Step 982 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1180624.0
+Step 983 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 1 -> 1:0 |Time: 1437800.0
+Step 984 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 11 -> 4:0 |Time: 2164347.0
+Step 985 | DEL 1 | DEL 5 | COPY 13 -> 3:2 | DEL 7 |Time: 1782784.0
+Step 986 | DEL 1 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1411910.0
+Step 987 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 |Time: 1220866.0
+Step 988 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 15 -> 5:0 |Time: 1502615.0
+Step 989 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 2 -> 3:2 |Time: 1722514.0
+Step 990 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | DEL 7 |Time: 2347393.0
+Step 991 | DEL 1 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1393397.0
+Step 992 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 0 |Failed to compile
+Step 993 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 19 |Failed to compile
+Step 994 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 9 |Time: 1280980.0
+Step 995 | DEL 1 | DEL 5 | COPY 13 -> 3:2 | DEL 7 |Time: 1306398.0
+Step 996 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | COPY 1 -> 3:1 |Time: 1835325.0
+Step 997 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | DEL 11 |Patch invalid
+Step 998 | DEL 1 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |Time: 1782424.0
+Step 999 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 6 -> 4:0 |Patch invalid
+Step 1000 | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 | MOVE 19 -> 5:0 |Failed to compile
+
+Best patch found: | DEL 1 | DEL 5 | COPY 1 -> 3:1 | COPY 13 -> 3:2 | DEL 7 |
+Found at step: 864
+Best execution time: 1096173.0 (ns) 
+Speedup (%): 0.5191933196841169

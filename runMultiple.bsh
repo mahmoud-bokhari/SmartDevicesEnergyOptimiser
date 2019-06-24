@@ -1,0 +1,34 @@
+
+if [ "$#" != 3 ]; then
+  echo "ERROR: this script requires 2 arguments"
+  echo "Usage : ./runMultiple deviceName portId numberOfRuns" 
+  echo "e.g. : ./ValidationPareto.bsh ZX1G425LSC 2 3" 
+  
+  exit 1
+fi
+
+deviceName=$1
+deviceId=$(./getDeviceID.bsh $1) #The deviceSerialNumber "ZX1G425LSC" "HT516WV01860"
+
+portId=$2
+counter=$3
+
+for i in {0 .. $counter}
+do
+	cp -f gin-master/$deviceName/reboundPC/Spring-Copy.java gin-master/$deviceName/reboundPC/app/src/main/java/com/example/mahmoud/modifiedrebound/Spring.java
+	echo =========================== experiment $counter starting... ========================================
+	DATE=`date '+%Y-%m-%d_%H-%M-%S'`
+	echo =========================== $DATE ========================================
+	java -jar gin-rebound.jar $deviceName $portId true 1 1 >> $deviceName-$DATE.txt
+	DATE=`date '+%Y-%m-%d_%H-%M-%S'`
+	adb -s $deviceId reboot
+	
+
+	sleep 10m
+	echo =========================== experiment $counter finished    ========================================
+	echo =========================== $DATE ========================================
+	#sleep 180m
+	
+	#sleep 60m
+
+done

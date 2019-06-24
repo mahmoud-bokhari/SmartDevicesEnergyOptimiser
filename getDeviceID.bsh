@@ -1,0 +1,37 @@
+deviceName=$1
+
+if [[ $deviceName == "nexus9-1" ]]; then
+	deviceId="HT516WV01860"
+elif [[ $deviceName == "nexus9-2" ]]; then
+	deviceId="HT4BRWV01167"
+elif [[ $deviceName == "nexus6-1" ]]; then 
+	deviceId="ZX1G423Z6R"
+elif [[ $deviceName == "nexus6-2" ]]; then 
+	deviceId="ZX1G425WCX"
+elif [[ $deviceName == "nexus6-3" ]]; then 
+	deviceId="ZX1G523JBV"
+elif [[ $deviceName == "nexus6-4" ]]; then 
+	deviceId="ZX1G4229WT"
+elif [[ $deviceName == "nexus6-5" ]]; then 
+	deviceId="ZX1G425LSC"
+elif [[ $deviceName == "nexus6-6" ]]; then 
+	deviceId="ZX1G523TKK"
+elif [[ $deviceName == "moto-g-1" ]]; then 
+	deviceId="ZY223JZ486"
+elif [[ $deviceName == "moto-g-2" ]]; then 
+	deviceId="ZY223JTS77"
+elif [[ $deviceName == "moto-g-3" ]]; then 
+	deviceId="ZY223JX9RR"
+elif [[ $deviceName == "moto-g-4" ]]; then 
+	deviceId="ZY223JTHVF"	
+elif [[ $deviceName == "pixel-1" ]]; then 
+	deviceId="FA69G0313173"	
+elif [[ $deviceName == "xperia-1" ]]; then 
+	deviceId="CB512BS5BF"
+elif [[ $deviceName == "xperia-2" ]]; then 
+	deviceId="CB512BVN5Z"
+else
+	deviceId="unknown"
+fi
+
+echo $deviceId
