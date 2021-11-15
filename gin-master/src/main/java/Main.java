@@ -1,8 +1,9 @@
 import DPO.DpoExperiment;
 import DPO.DpoExperimentRunner;
+import DPO.OnDeviceExperiment;
 import SolutionGeneratorDPO.ConfigurationFileProcessor;
-import gin.Mahmoud.*;
-import gin.StructuralTunningExperimentRunner;
+import Mahmoud.*;
+import gin.Optimiser.StructuralTunningExperimentRunner;
 
 /**
  * Created by Mahmoud-Uni on 6/17/2019.
@@ -40,6 +41,7 @@ public class Main {
         Device device = new Device();
         boolean isInvivo=false;
         int portId=0;
+        float testLimit = 1f;
 
 
         //args[0]="gin-rebound/classes/examples/rebound/Spring.java";
@@ -55,7 +57,7 @@ public class Main {
             isInvivo = true;
             sourceFilename="gin-master\\reboundPC\\app\\src\\main\\java\\com\\example\\mahmoud\\modifiedrebound\\Spring.java";
 
-            device = new Device(deviceName,portId,isInvivo);
+            device = new Device(deviceName,portId,isInvivo,testLimit, Experiment.NOISE_HANDLING_TABLE);
             String SEARCH_APPROACH = "explore";
             double SECOND_TERMINATION_CONDITION_DAY = 1d;
             SECOND_TERMINATION_CONDITION_DAY = SECOND_TERMINATION_CONDITION_DAY * 24 * 60 * 60 * 1000;
@@ -76,7 +78,7 @@ public class Main {
                 dpoExperimentRunner.run(args);
             }
 
-            else if(args[0].contains("islands-dpo-es-1+1"))
+            else if(args[0].contains("islandThreads-dpo-es-1+1"))
             {
                 DpoExperimentRunner dpoExperimentRunner = new DpoExperimentRunner();
 
@@ -84,20 +86,10 @@ public class Main {
 
                 dpoExperimentRunner.run(args);
             }
+            else if(args[0].toLowerCase().contains("dpoisland"))
+            {
+                OnDeviceExperiment.main(args);
+            }
 
-    }
-    class IslandThread extends Thread
-    {
-        String name="";
-        public DpoExperiment.DpoExperimentResults currentBest;
-        public DpoExperiment.DpoExperimentResults forignerBest;
-        public IslandThread(String name)
-        {
-            super(name);
-        }
-        @Override
-        public void run() {
-            super.run();
-        }
     }
 }

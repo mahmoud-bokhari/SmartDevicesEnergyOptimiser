@@ -5,7 +5,7 @@
       <element id="module-output" name="main" />
       <element id="extracted-dir" path="$PROJECT_DIR$/gin-master/gin - addrebound.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/joda-time/joda-time/2.1/joda-time-2.1.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="E:/Users/Mahmoud-Uni/IdeaProjects/SuanShu/out/artifacts/SuanShu_jar/SuanShu.jar" path-in-jar="/" />
+      <element id="dir-copy" path="$PROJECT_DIR$/../Users/Mahmoud-Uni/IdeaProjects/SuanShu" />
     </root>
   </artifact>
 </component>

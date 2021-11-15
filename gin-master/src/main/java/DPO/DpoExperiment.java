@@ -1,17 +1,15 @@
 package DPO;
 
 import SolutionGeneratorDPO.ConfigurationFileProcessor;
-import gin.*;
-import gin.Mahmoud.CommandLineClass;
-import gin.Mahmoud.Device;
-import gin.Mahmoud.Utils;
+import Mahmoud.CommandLineClass;
+import Mahmoud.Device;
+import Mahmoud.Utils;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.math3.stat.descriptive.DescriptiveStatistics;
 
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashMap;
 
 import static DPO.DpoExperimentRunner.MAE_CONSTRAINT;
@@ -43,7 +41,7 @@ public class DpoExperiment {
     private String[] selectedVariables;
     private String[] defaultValues;
 
-    private String headers = "fuel use, MAE, test suite execution time, wasFitter, pValue, number of samples, pc test execution time," +
+    private String headers = "device, fuel use, MAE, test suite execution time, wasFitter, pValue, number of samples, pc test execution time," +
             "deployment time, in-vivo time, complete evaluation time, extra info, samples";
 
     String TEST_SUITE = "com.example.mahmoud.modifiedrebound.devSubsetPc";
@@ -222,12 +220,15 @@ public class DpoExperiment {
 
             if(device.isRunInVivo)
             {
+                CommandLineClass commandLineClass = new CommandLineClass(device.deviceId,portId);
                 //check the mae if it's less than MAE_CONSTRAINT deploy otherwise return the current fitness evaluation which is fuel_use = Double.MAX
                 if(result.MAE < MAE_CONSTRAINT)
                 {
-                    // prepare the phone
+                    commandLineClass.usbPortOpen();
+                    // prepareForExperiment the phone
                     long operationTime= System.currentTimeMillis();
-                    device.prepare();
+                    if(device.currentEvaluationNumber > 0) device.prepareForRun(); // subsequent runs don't need to do full preprations
+                    else device.prepareForExperiment(); // first run, make sure to turn off HW, Doze, .... they are expensive opeation about 2 mins
                     operationTime = System.currentTimeMillis() - operationTime;
                     utils.log("preparation time (ms): "+operationTime, isPrintSteps);
                     // deploy the app
@@ -248,8 +249,10 @@ public class DpoExperiment {
 
                     operationTime = System.currentTimeMillis();
                     device.pullExperimentsLogs("sdcard/Android/data/com.example.mahmoud.batterymonitor/files",PHONE_LOGS_DIRECTORY);
+
                     device.remove("sdcard/Android/data/com.example.mahmoud.batterymonitor/files");
-                    copyEvaluationValuesFile(PHONE_LOGS_DIRECTORY.concat("\\"+device.directoryNumber), MAIN_DIRECTORY);
+                    copyFileFromTo(PHONE_LOGS_DIRECTORY.concat("\\"+device.currentEvaluationNumber), MAIN_DIRECTORY,"evaluationValues.txt");
+                    copyFileFromTo(MAIN_DIRECTORY, PHONE_LOGS_DIRECTORY.concat("\\"+device.currentEvaluationNumber),"config.csv");
                     //device.pull("sdcard/Android/data/com.example.mahmoud.batterymonitor/files/evaluationValues.txt",MAIN_DIRECTORY);//
 
 
@@ -258,6 +261,8 @@ public class DpoExperiment {
                     utils.log("result fetching time (ms): "+operationTime, isPrintSteps);
 
                     device.updateCurrentBatteryLevel();
+
+                    commandLineClass.usbPortClose(); // close the port to prevent the device from recharging while the next solution is generated
                 }
                 //device.updateCurrentBatteryLevel();
             }
@@ -277,16 +282,16 @@ public class DpoExperiment {
     }
     
 
-    public void copyEvaluationValuesFile(String location, String destination)
+    public void copyFileFromTo(String location, String destination, String fileName)
     {
         try {
             utils.log("copying evaluation values...",isPrintSteps);
-            String fileLocation = location+"\\evaluationValues.txt";
+            String fileLocation = location+"\\"+fileName;
             FileUtils.copyFileToDirectory(new File(fileLocation),new File(destination));
         }
         catch (Exception e)
         {
-            utils.log("failed to copy evaluation values...",isPrintSteps);
+            utils.log("failed to copy file..."+location+" to "+destination,isPrintSteps);
             e.printStackTrace();
             copyBadEvaluationValues(destination);
             utils.log(e.getMessage(),isPrintSteps);
@@ -388,7 +393,7 @@ public class DpoExperiment {
         public double MAE = -1; // second objective or a constraint
         public double testExecutionTime = -1;
         //public double advanceExecutionTime = -1;
-        Solution solution;
+        public Solution solution;
 
         public String deviceName="";
 
@@ -402,7 +407,7 @@ public class DpoExperiment {
         public int inVivoEvaluationTime=0;
         public int completeEvaluationTime = 0;
 
-        String extraInfo="";
+        public String extraInfo="";
 
 
 
@@ -445,7 +450,7 @@ public class DpoExperiment {
         public String prepareForPrinting()
         {
 
-            return String.format("%s,%s,%s,%f,%s,%f,%b,%f,%d,%d,%d,%d,%d,%s,%s",deviceName,utils.arrayToString(solution.getDecisionVariables()),
+            return String.format("%s,%s,%s,%f,%s,%f,%b,%f,%d,%d,%d,%d,%d,%s,%s",utils.arrayToString(solution.getDecisionVariables()),deviceName,
                     utils.arrayToString(solution.getSigma()),this.fuelUse,String.valueOf(this.MAE),this.testExecutionTime,wasFitter,pValue,
                     objectiveStats.getValues().length,pcTestExecutionTime,deploymentTime,inVivoEvaluationTime,completeEvaluationTime,
 
@@ -544,53 +549,7 @@ public class DpoExperiment {
 
     public void rechargeTill(int batteryLevel)
     {
-        try {
-            if(device.isRunInVivo)
-            {
-                int counter = 0;
-                int limit = 2;
-                int bootCounter = 0;
-                long sleepFor = 5 * 60 * 1000;
-
-                device.updateCurrentBatteryLevel();
-                int previousLevel = device.currentBatteryLevel;
-
-                CommandLineClass commandLineClass = new CommandLineClass(device.deviceId,portId);
-                while( device.currentBatteryLevel < batteryLevel)
-                {
-                    Thread.sleep(sleepFor);
-
-                    if(bootCounter > 0)
-                    {
-                        utils.log("There's a problem in the device, it is not recharging and" +
-                                " it has been rebooted, the experiment will proceed...", isPrintSteps);
-                    }
-                    device.updateCurrentBatteryLevel();
-                    if(previousLevel == device.currentBatteryLevel)
-                    {
-                        counter++;
-                        utils.log("battery level didn't change!", isPrintSteps);
-                    }
-
-                    if(counter > limit)
-                    {
-                        utils.log("The device was plugged in for (mins): "+(sleepFor/60/1000), isPrintSteps);
-                        utils.log("reboot and recharge again", isPrintSteps);
-                        commandLineClass.runAdbCommand("reboot");
-                        Thread.sleep(sleepFor/2); // this is an additional recharging period for rebooting.
-                        bootCounter++;
-                    }
-                    previousLevel = device.currentBatteryLevel;
-                }
-
-
-            }
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-            utils.log("exception: "+e.getMessage(), isPrintSteps);
-        }
+        device.rechargeTill(batteryLevel);
     }
 
     public Double[] getSelectedVariables()

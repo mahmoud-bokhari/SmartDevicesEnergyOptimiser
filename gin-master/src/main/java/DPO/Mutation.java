@@ -1,6 +1,6 @@
 package DPO;
 
-import gin.Mahmoud.Utils;
+import Mahmoud.Utils;
 
 import java.util.Random;
 
@@ -11,9 +11,10 @@ public class Mutation {
     public static boolean IS_ADAPTIVE=true;
     public static double UPPER_BOUND = 100000d;
     public static double LOWER_BOUND = 0d;
-    public int mutationProbability = (int)(1f/Solution.size)*100;
+    public int mutationProbability = (int)((1f/Solution.size)*100);
     Utils utils = new Utils();
     public static boolean isPrintSteps=true;
+    public static boolean isDebug=false;
 
 
     public Solution mutateUsingUncorrelatedMutation(Solution solution, boolean isSingle, boolean useProbability)
@@ -55,7 +56,7 @@ public class Mutation {
         int index=0;
         if (useProbability)
         { // why waste iterations (the while loop to check if any change has been applied).
-            utils.log("mutation probability: "+mutationProbability,isPrintSteps);
+            utils.log("mutation probability: "+mutationProbability,isDebug);
 
             if (random.nextInt(101) <= mutationProbability)
             {
@@ -67,7 +68,7 @@ public class Mutation {
 
         else // pick random index to mutate.
         {
-            utils.log("picking a random index ",isPrintSteps);
+            utils.log("picking a random index ",isDebug);
             return random.nextInt(solutionSize);
         }
     }
@@ -93,7 +94,7 @@ public class Mutation {
     }
     private Solution doMutation(Solution newSolution, double newSigma, int index)
     {
-        utils.log("mutating the value has started", isPrintSteps);
+        utils.log("mutating the value has started", isDebug);
         Random random = new Random();
         // mutate the decision var using the new sigma
         Double newValue = newSolution.getDecisionVariables()[index] + (newSigma * random.nextGaussian());

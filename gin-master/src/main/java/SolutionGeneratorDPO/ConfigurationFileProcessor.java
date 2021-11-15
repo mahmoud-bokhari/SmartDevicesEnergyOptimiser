@@ -1,9 +1,8 @@
 package SolutionGeneratorDPO;
 
-import gin.Mahmoud.Utils;
+import Mahmoud.Utils;
 
 import java.io.*;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,7 +11,7 @@ import java.util.Map;
  */
 public class ConfigurationFileProcessor {
     Utils utils = new Utils();
-    public static boolean isPrintSteps = true;
+    public static boolean isPrintSteps = false;
 
 
     public HashMap<String,String> readConfigFile(String path)
@@ -32,7 +31,7 @@ public class ConfigurationFileProcessor {
             HashMap<String,String> configurationHashMap = new HashMap<>();
             while (( line = br.readLine()) != null )
             {
-                utils.printOnly("line: "+line,isPrintSteps);
+                //utils.printOnly("line: "+line,isPrintSteps);
                 String[] temp = line.split(",");
                 configurationHashMap.put(temp[0],temp[1]);
             }

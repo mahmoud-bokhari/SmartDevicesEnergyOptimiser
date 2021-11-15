@@ -5,18 +5,17 @@ package DPO;
 
  */
 
-import com.google.common.util.concurrent.Atomics;
 import com.numericalmethod.suanshu.stats.test.rank.wilcoxon.WilcoxonRankSum;
-import gin.Mahmoud.CommandLineClass;
-import gin.Mahmoud.Device;
-import gin.Mahmoud.Utils;
+import Mahmoud.CommandLineClass;
+import Mahmoud.Device;
+import Mahmoud.Experiment;
+import Mahmoud.Utils;
 
 import javax.management.Attribute;
 import javax.management.AttributeList;
 import javax.management.MBeanServer;
 import javax.management.ObjectName;
 import java.lang.management.ManagementFactory;
-import java.util.*;
 
 
 import java.util.ArrayList;
@@ -28,19 +27,18 @@ import java.util.Random;
  */
 public class DpoExperimentRunner {
 
-    private static final int seed = 5678;
-    private static final int NUM_STEPS = 10000;
-
-    static double SECOND_TERMINATION_CONDITION_DAY = 1; // * 24 * 60 *60 *1000
+    public static double SECOND_TERMINATION_CONDITION_DAY = 1; // * 24 * 60 *60 *1000
     static String SEARCH_APPROACH = ""; // either explore or exploit
 
 
 
-    public static final int MAE_CONSTRAINT = 10;
+    public static final int MAE_CONSTRAINT = 1;
     public static final int BATTERY_LIMIT = 20;
+    double CONFIDENCE_LEVEL = 0.05d;
+    String NOISE_HANDLING = Experiment.NOISE_HANDLING_DUMMY_LOOP; // dummyLoop or tableBased
 
     private String OriginalConfigFilePath;
-    protected DpoExperiment testRunner;
+    public DpoExperiment testRunner;
     protected Random rng;
 
 
@@ -61,9 +59,9 @@ public class DpoExperimentRunner {
     public static boolean isPrintSteps = true;
     public static boolean isDebug=true;
 
-    static Utils utils = new Utils();
+    public static Utils utils = new Utils();
     static Device[] devices;
-
+    double origFuelUse=0;
 
 
     public static double getProcessCpuLoad() {
@@ -123,14 +121,16 @@ public class DpoExperimentRunner {
         boolean isInvivo=false;
         int portId=0;
 
+        float testLimit = 0f;
+
         if(args == null || args.length == 0)
         {
             //args = new String[1];
             deviceName = "nexus6-4";//"nexus6-2";
             portId = 4;
             isInvivo = true;
-
-            device = new Device(deviceName,portId,isInvivo);
+            testLimit = 0;
+            device = new Device(deviceName,portId,isInvivo, testLimit, NOISE_HANDLING);
             SEARCH_APPROACH = "explore";
             SECOND_TERMINATION_CONDITION_DAY = SECOND_TERMINATION_CONDITION_DAY * 24 * 60 * 60 * 1000;
         }
@@ -142,15 +142,17 @@ public class DpoExperimentRunner {
                 deviceName = args[1];
                 portId = Integer.parseInt(args[2]);
                 isInvivo = Boolean.parseBoolean(args[3]);
-                if (args[4].contains("explore") || args[4].equals("1"))
+                testLimit = Float.parseFloat(args[4]);
+                if (args[5].contains("explore") || args[5].equals("1"))
                     SEARCH_APPROACH = "explore";
                 else
                     SEARCH_APPROACH = "exploit";
 
-                if (args[5] != null)
-                    SECOND_TERMINATION_CONDITION_DAY = Double.parseDouble(args[5]) * 24 * 60 * 60 * 1000;
+                if (args[6] != null)
+                    //SECOND_TERMINATION_CONDITION_DAY = Double.parseDouble(args[6]) * 24 * 60 * 60 * 1000;
+                    SECOND_TERMINATION_CONDITION_DAY = Double.parseDouble(args[6]);
 
-                device = new Device(deviceName, portId, isInvivo);
+                device = new Device(deviceName, portId, isInvivo, testLimit, NOISE_HANDLING);
 
                 testRunner = new DpoExperiment(device);
 
@@ -160,8 +162,14 @@ public class DpoExperimentRunner {
                     exploit();
 
             }
+            else if(args[0].contains("onDevice-dpo-es-1+1"))
+            {
+
+            }
         }
     }
+
+
     public DpoExperimentRunner() {
     }
 
@@ -180,119 +188,55 @@ public class DpoExperimentRunner {
     }
 
     /**
-     * Actual LocalSearch.
+     * Actual LocalSearch (sequential search).
      * @return
      */
     public Solution explore() {
 
-        DpoExperiment.DpoExperimentResults currentBestResult;
+
         Solution bestSolution = new Solution(5);
         bestSolution.setDecisionVariables(testRunner.getSelectedVariables());
-        double origFuelUse=0;
-        double bestFuelUse=0;
+        DpoExperiment.DpoExperimentResults currentBestResults;
 
-        utils.log("explore is started \nIt will run for (days): " + (SECOND_TERMINATION_CONDITION_DAY / 24 / 60 / 60 / 1000), isPrintSteps);
+
+        //utils.log("explore is started \nIt will run for (days): " + (SECOND_TERMINATION_CONDITION_DAY / 24 / 60 / 60 / 1000), isPrintSteps);
+        utils.log("explore is started \nIt will run for " + SECOND_TERMINATION_CONDITION_DAY +" times", isPrintSteps);
 
         long start = System.currentTimeMillis();
         int step = 0;
         int bestStep=0;
-        while(System.currentTimeMillis() < (start+ (long) SECOND_TERMINATION_CONDITION_DAY) )
+        //while(System.currentTimeMillis() < (start+ (long) SECOND_TERMINATION_CONDITION_DAY) )
+        while(SECOND_TERMINATION_CONDITION_DAY>0)
         {
             step++;
 
-            if(testRunner.device.isRunInVivo) {
+            if(testRunner.device.isRunInVivo)
+            {
                 utils.log("checking the battery level... " + testRunner.device.currentBatteryLevel, isPrintSteps);
-                utils.log("tournament size will be: "+testRunner.device.getMinimalSetSize(),isPrintSteps);
-                if (testRunner.device.currentBatteryLevel < BATTERY_LIMIT) break;
-
-                if(testRunner.device.currentBatteryLevel != 100 && testRunner.device.currentBatteryLevel%10 == 0)
-                {
-
-                    Device nextDevice = seekImmigration(testRunner.device);
-
+                if(NOISE_HANDLING.contains(Experiment.NOISE_HANDLING_TABLE))
+                    utils.log("tournament size will be: "+ testRunner.device.getMinimalSetSize(),isPrintSteps);
+                if (testRunner.device.currentBatteryLevel < BATTERY_LIMIT) {
+                    SECOND_TERMINATION_CONDITION_DAY--;
+                    if(SECOND_TERMINATION_CONDITION_DAY == 0)break;
+                    testRunner.rechargeTill(100);
                 }
+
+//                if(testRunner.device.currentBatteryLevel != 100 && testRunner.device.currentBatteryLevel%10 == 0)
+//                {
+//                    Device nextDevice = seekImmigration(testRunner.device);
+//                }
             }
-            utils.log("Tournament " + step + " ", isPrintSteps);
-
-
-            // first step: send evaluate the original on every device, create a new solution for each device and evaluate it.
-
-
-            // the original and the current best must always valid solutions.
+            currentBestResults = evolve(bestSolution, step);
+            bestSolution = currentBestResults.solution;
             if(step == 1)
-                utils.log("evaluating the original variant ...", isPrintSteps);
-            else
-                utils.log("evaluating the current best...", isPrintSteps);
-
-            // evaluate the original or the current best.
-            currentBestResult = testRunner.run(bestSolution);// best solution should always successful (applied, compiled and tested)
-
-            if(step == 1)
-                origFuelUse = currentBestResult.fuelUse;
-
-            utils.log("evaluating a valid neighbour...", isPrintSteps);
-            // a neighbour must be a valid solution.
-
-
-            DpoExperiment.DpoExperimentResults newSolutionTestResult = evaluateValidNeighbour(bestSolution);
-
-            utils.log("current best fitness: " + currentBestResult.fuelUse,isPrintSteps);
-            utils.log("current best accuracy (MAE): " + currentBestResult.MAE,isPrintSteps);
-
-            utils.log("new variant fitness: " + newSolutionTestResult.fuelUse,isPrintSteps);
-            utils.log("new variant accuracy (MAE): " + newSolutionTestResult.MAE,isPrintSteps);
-            // both are valid.
-
-            computeFitness(currentBestResult,newSolutionTestResult,0.05d);
-            allSolutions.add(currentBestResult.clone());
-            allSolutions.add(newSolutionTestResult.clone());
-
-            tournament.add(currentBestResult.clone());
-            tournament.add(newSolutionTestResult.clone());
-
-            //if (neighbour <= currentBest) {
-            if (!currentBestResult.wasFitter) { // this is an eclectic approach
-                //if (neighbourTestResult.wasFitter) { // this is a conservative approach
-                currentBestResult = newSolutionTestResult.clone();
-                bestSolution=currentBestResult.solution.clone();
-
-                bestFuelUse = currentBestResult.fuelUse;
-                bestStep = step;
-                utils.log("*** New best *** fitness: " + bestFuelUse + "(nAh)"+", MAE: "+currentBestResult.MAE, isPrintSteps);
-                utils.log("*** New best *** solution: "+bestSolution.toString(), isPrintSteps);
-                testRunner.saveHistoricalBestSolutions(step); // modify save
-                bestSolutions.add(currentBestResult);
-            } else {
-                utils.log("fitness: " + newSolutionTestResult.fuelUse+", MAE: "+newSolutionTestResult.MAE, isPrintSteps);
-            }
-
-            // use the tournament list as sometimes neighbour = currentBest
-            testRunner.saveResults(new StringBuilder(tournament.get(0).prepareForPrinting()+"\n"+
-                    tournament.get(1).prepareForPrinting()+"\n"),true,"tournaments-"+testRunner.EXPERIMENT_DATE_TIME+".csv");
-            tournament.clear();
-            testRunner.saveResults(new StringBuilder(currentBestResult.prepareForPrinting()+"\n"),true,"bestResults-"+testRunner.EXPERIMENT_DATE_TIME+".csv");
-
-
-//            if(step%2 == 0)
-//            {
-            StringBuilder temp = new StringBuilder();
-            for(DpoExperiment.DpoExperimentResults result : allSolutions)
-                temp.append(result.prepareForPrinting()+"\n");
-            allSolutions.clear();
-            testRunner.saveResults(temp,true,"allSolutions-"+testRunner.EXPERIMENT_DATE_TIME+".csv");
-            utils.saveLog(testRunner.RESULT_DIRECTORY.concat("\\").concat("detailedLog-").concat(testRunner.EXPERIMENT_DATE_TIME).concat(".txt"),true);
-            utils.resetLogger();
-//            }
-            System.out.println("=====================================================================================");
+                origFuelUse = bestSolution.fitness;
 
         } // end of for loop
 
-        testRunner.device.enableRecharging(true);
+        //testRunner.device.enableRecharging(true);
 
         utils.log("\nBest solution found: " + utils.arrayToString(bestSolution.getDecisionVariables()), isPrintSteps);
-        utils.log("Found at step: " + bestStep, isPrintSteps);
-        utils.log("Best fuel use: " + bestFuelUse + " (nAh) ", isPrintSteps);
-        utils.log("Speedup (%): " + (origFuelUse - bestFuelUse)/origFuelUse, isPrintSteps);
+        utils.log("improvement (%): " + (origFuelUse - bestSolution.fitness)/origFuelUse, isPrintSteps);
 
         //testRunner.saveResults(new StringBuilder(currentBestResult.prepareForPrinting()+"\n"),true,"bestResults"+testRunner.EXPERIMENT_DATE_TIME+".csv");
 
@@ -301,6 +245,147 @@ public class DpoExperimentRunner {
         return bestSolution;
     }
 
+    public DpoExperiment.DpoExperimentResults evolve(Solution bestSolution, int step)
+    {
+        //step++;
+        DpoExperiment.DpoExperimentResults currentBestResult;
+
+        utils.log("Tournament " + step + " ", isPrintSteps);
+
+        // the original and the current best must always valid solutions.
+        if(step == 1)
+            utils.log("evaluating the original variant ...", isPrintSteps);
+        else
+            utils.log("evaluating the current best...", isPrintSteps);
+
+        // evaluate the original or the current best.
+        currentBestResult = testRunner.run(bestSolution);// best solution should always successful (applied, compiled and tested)
+
+        utils.log("evaluating a valid neighbour...", isPrintSteps);
+        // a neighbour must be a valid solution.
+
+        DpoExperiment.DpoExperimentResults newSolutionTestResult = evaluateValidNeighbour(bestSolution);
+
+        utils.log("current best fitness: " + currentBestResult.fuelUse,isPrintSteps);
+        utils.log("current best accuracy (MAE): " + currentBestResult.MAE,isPrintSteps);
+
+        utils.log("new variant fitness: " + newSolutionTestResult.fuelUse,isPrintSteps);
+        utils.log("new variant accuracy (MAE): " + newSolutionTestResult.MAE,isPrintSteps);
+        // both are valid.
+
+        compareFitness(currentBestResult, newSolutionTestResult);
+
+        allSolutions.add(currentBestResult.clone());
+        allSolutions.add(newSolutionTestResult.clone());
+
+        tournament.add(currentBestResult.clone());
+        tournament.add(newSolutionTestResult.clone());
+
+        //if (neighbour <= currentBest) {
+        if (!currentBestResult.wasFitter) { // this is an eclectic approach
+            //if (neighbourTestResult.wasFitter) { // this is a conservative approach
+            currentBestResult = newSolutionTestResult.clone();
+            bestSolution = currentBestResult.solution.clone();
+            bestSolution.fitness = currentBestResult.fuelUse;
+            bestSolution.wasBest = currentBestResult.wasFitter;
+
+            utils.log("*** New best *** fitness: " + bestSolution.fitness + "(nAh)"+", MAE: "+currentBestResult.MAE, isPrintSteps);
+            utils.log("*** New best *** solution: "+bestSolution.toString(), isPrintSteps);
+            testRunner.saveHistoricalBestSolutions(step); // modify save
+            bestSolutions.add(currentBestResult);
+        } else {
+            utils.log("fitness: " + newSolutionTestResult.fuelUse+", MAE: "+newSolutionTestResult.MAE, isPrintSteps);
+        }
+
+        // use the tournament list as sometimes neighbour = currentBest
+        testRunner.saveResults(new StringBuilder(tournament.get(0).prepareForPrinting()+"\n"+
+                tournament.get(1).prepareForPrinting()+"\n"),true,"tournaments-"+testRunner.EXPERIMENT_DATE_TIME+".csv");
+        tournament.clear();
+        testRunner.saveResults(new StringBuilder(currentBestResult.prepareForPrinting()+"\n"),true,"bestResults-"+testRunner.EXPERIMENT_DATE_TIME+".csv");
+
+
+        StringBuilder temp = new StringBuilder();
+        for(DpoExperiment.DpoExperimentResults result : allSolutions)
+            temp.append(result.prepareForPrinting()+"\n");
+        allSolutions.clear();
+        testRunner.saveResults(temp,true,"allSolutions-"+testRunner.EXPERIMENT_DATE_TIME+".csv");
+        utils.saveLog(testRunner.RESULT_DIRECTORY.concat("\\").concat("detailedLog-").concat(testRunner.EXPERIMENT_DATE_TIME).concat(".txt"),true);
+        utils.resetLogger();
+//            }
+        System.out.println("=====================================================================================");
+        return currentBestResult;
+    }
+
+
+    public DpoExperiment.DpoExperimentResults runTournament(Solution bestSolution, Solution newSolution, int step)
+    {
+        //step++;
+        DpoExperiment.DpoExperimentResults currentBestResult;
+
+        utils.log("Tournament " + step + " ", isPrintSteps);
+
+        // the original and the current best must always valid solutions.
+        if(step == 1)
+            utils.log("evaluating the original variant ...", isPrintSteps);
+        else
+            utils.log("evaluating the current best...", isPrintSteps);
+
+        // evaluate the original or the current best.
+        currentBestResult = testRunner.run(bestSolution);// best solution should always successful (applied, compiled and tested)
+
+        utils.log("evaluating a valid neighbour...", isPrintSteps);
+        // a neighbour must be a valid solution.
+
+        DpoExperiment.DpoExperimentResults newSolutionTestResult = testRunner.run(newSolution);
+
+        utils.log("current best fitness: " + currentBestResult.fuelUse,isPrintSteps);
+        utils.log("current best accuracy (MAE): " + currentBestResult.MAE,isPrintSteps);
+
+        utils.log("new variant fitness: " + newSolutionTestResult.fuelUse,isPrintSteps);
+        utils.log("new variant accuracy (MAE): " + newSolutionTestResult.MAE,isPrintSteps);
+        // both are valid.
+
+        computeFitness(currentBestResult,newSolutionTestResult,0.05d);
+        allSolutions.add(currentBestResult.clone());
+        allSolutions.add(newSolutionTestResult.clone());
+
+        tournament.add(currentBestResult.clone());
+        tournament.add(newSolutionTestResult.clone());
+
+        //if (neighbour <= currentBest) {
+        if (!currentBestResult.wasFitter) { // this is an eclectic approach
+            //if (neighbourTestResult.wasFitter) { // this is a conservative approach
+            currentBestResult = newSolutionTestResult.clone();
+            bestSolution = currentBestResult.solution.clone();
+            bestSolution.fitness = currentBestResult.fuelUse;
+            bestSolution.wasBest = currentBestResult.wasFitter;
+
+            utils.log("*** New best *** fitness: " + bestSolution.fitness + "(nAh)"+", MAE: "+currentBestResult.MAE, isPrintSteps);
+            utils.log("*** New best *** solution: "+bestSolution.toString(), isPrintSteps);
+            testRunner.saveHistoricalBestSolutions(step); // modify save
+            bestSolutions.add(currentBestResult);
+        } else {
+            utils.log("fitness: " + newSolutionTestResult.fuelUse+", MAE: "+newSolutionTestResult.MAE, isPrintSteps);
+        }
+
+        // use the tournament list as sometimes neighbour = currentBest
+        testRunner.saveResults(new StringBuilder(tournament.get(0).prepareForPrinting()+"\n"+
+                tournament.get(1).prepareForPrinting()+"\n"),true,"tournaments-"+testRunner.EXPERIMENT_DATE_TIME+".csv");
+        tournament.clear();
+        testRunner.saveResults(new StringBuilder(currentBestResult.prepareForPrinting()+"\n"),true,"bestResults-"+testRunner.EXPERIMENT_DATE_TIME+".csv");
+
+
+        StringBuilder temp = new StringBuilder();
+        for(DpoExperiment.DpoExperimentResults result : allSolutions)
+            temp.append(result.prepareForPrinting()+"\n");
+        allSolutions.clear();
+        testRunner.saveResults(temp,true,"allSolutions-"+testRunner.EXPERIMENT_DATE_TIME+".csv");
+        utils.saveLog(testRunner.RESULT_DIRECTORY.concat("\\").concat("detailedLog-").concat(testRunner.EXPERIMENT_DATE_TIME).concat(".txt"),true);
+        utils.resetLogger();
+//            }
+        System.out.println("=====================================================================================");
+        return currentBestResult;
+    }
 
     public Solution exploit() {
         DpoExperiment.DpoExperimentResults currentBestResult;
@@ -325,7 +410,8 @@ public class DpoExperimentRunner {
 
             if(testRunner.device.isRunInVivo) {
                 utils.log("checking the battery level... " + testRunner.device.currentBatteryLevel, isPrintSteps);
-                utils.log("tournament size will be: "+testRunner.device.getMinimalSetSize(),isPrintSteps);
+                if(!NOISE_HANDLING.contains(Experiment.NOISE_HANDLING_DUMMY_LOOP))
+                    utils.log("tournament size will be: "+testRunner.device.getMinimalSetSize(),isPrintSteps);
                 if (testRunner.device.currentBatteryLevel < BATTERY_LIMIT) break;
             }
             utils.log("Tournament " + step + " ", isPrintSteps);
@@ -417,7 +503,7 @@ public class DpoExperimentRunner {
                 //new Device("nexus6-1", 1, true),
                 //new Device("moto-g-2", 2, true),
                 //new Device("nexus6-3", 3, true),
-                new Device("nexus6-4", 4, true),
+                new Device("nexus6-4", 4, true, 100f, NOISE_HANDLING),
                 //new Device("nexus6-5", 5, true),
                 //new Device("nexus9-1",0, true)};
         };
@@ -518,7 +604,35 @@ public class DpoExperimentRunner {
 
         //this.testRunner.reloadOriginalSourceFile();
     }
-
+    private void compareFitness(DpoExperiment.DpoExperimentResults currentBest, DpoExperiment.DpoExperimentResults newSolution)
+    {
+        if(NOISE_HANDLING.contains(Experiment.NOISE_HANDLING_DUMMY_LOOP)) {
+            computeFitness(currentBest, newSolution);
+        }
+        else computeFitness(currentBest, newSolution, CONFIDENCE_LEVEL);
+    }
+    private void computeFitness(DpoExperiment.DpoExperimentResults currentBest, DpoExperiment.DpoExperimentResults newSolution)
+    {
+        if (currentBest.fuelUse < newSolution.fuelUse)
+        {
+            utils.log("the current best is fitter ",isPrintSteps);
+            currentBest.wasFitter=true;
+            newSolution.wasFitter=false;
+            return;
+        }
+        if(currentBest.fuelUse > newSolution.fuelUse) {
+            utils.log("the new solution is fitter ", isPrintSteps);
+            currentBest.wasFitter=false;
+            newSolution.wasFitter=true;
+            return;
+        }
+        else {
+            utils.log("data is not enough no tell which one is fitter", isPrintSteps);
+            currentBest.wasFitter=false;
+            newSolution.wasFitter=false;
+            return;
+        }
+    }
     private void computeFitness(DpoExperiment.DpoExperimentResults currentBest, DpoExperiment.DpoExperimentResults newSolution, double confidenceLevel)
     {
         currentBest.pValue = computePValueLeft(currentBest.objectiveStats.getValues(),
