@@ -3,10 +3,10 @@
     <output-path>$PROJECT_DIR$/out/artifacts/DpoIslandaOnDeviceExperiment_jar</output-path>
     <root id="archive" name="main.jar">
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/gin-master/src/main/java/DPO/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/SmartDeviceOptimiser/src/main/java/DPO/META-INF/MANIFEST.MF" />
       </element>
       <element id="module-output" name="main" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/gin-master/gin - addrebound.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/SmartDeviceOptimiser/gin - addrebound.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../Users/Mahmoud-Uni/SuanShu.jar" path-in-jar="/" />
     </root>
   </artifact>

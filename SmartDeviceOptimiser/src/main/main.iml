@@ -4,6 +4,7 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/java" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/java/gin" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -11,7 +12,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://E:/Users/Mahmoud-Uni/IdeaProjects/SuanShu/out/artifacts/SuanShu_jar/SuanShu.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../Users/Mahmoud-Uni/IdeaProjects/SuanShu/out/artifacts/SuanShu_jar/SuanShu.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -20,7 +21,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://E:/Users/Mahmoud-Uni/SuanShu.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../Users/Mahmoud-Uni/SuanShu.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
